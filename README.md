@@ -1,2 +1,2 @@
 # Internet-of-Things-for-Sustainability
-University of Idaho senior design project. The goal of these tutorials is to introduce students to IoT. These tutorials make use of the Intel Galileo.
+University of Idaho senior design project. The goal of the project is to create a series of tutorials for high school students to learn about Internet of Things. These tutorials will show students the power of IoT and how they can use technology to increase sustainability and make people's lives easier. These tutorials will be housed on this GitHub repository.
