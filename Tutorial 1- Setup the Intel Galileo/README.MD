@@ -23,7 +23,7 @@
  
 ##Setup the Intel Galileo
 
-###Pluging in the Intel Galileo Board
+###Plugging in the Intel Galileo Board
  1. Plug in the intel Galileo using the provided 5v wall cable. After a small period of time, 2 green lights should appear on the board. The first light will turn on when the board recieves power and the other will turn on when the board is ready to be connected to a computer.
  2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly.
 
@@ -40,7 +40,7 @@ On the compuer connected to the Intel Galileo...
  3. Open the Arduino IDE when it is done installing. (screen shot 3)
  4. In the Arduino IDE...
    1. Navigate to "Tools" -> "Board" and click on "Board Manager". (screen shot 4)
-   2. In the "Board Manager" window, scroll down to "Intel i586 Boards". Select the most up to date. In this case, it is "1.6.2+1.0" and click "install". The bottom part of the window will state that it is downloading "board definitions". Wait until it is done. If installed correctly, scrolling back down to "Intel i586 Boards" should say "installed" along with the version you installed.
+   2. In the "Board Manager" window, scroll down to "Intel i586 Boards". Select the most up to date. (screen shot 5)In this case, it is "1.6.2+1.0" and click "install". The bottom part of the window will state that it is downloading "board definitions". Wait until it is done. If installed correctly, scrolling back down to "Intel i586 Boards" should say "installed" along with the version you installed.
    3. 
 
 ##Updating the Intel Galileo Firmware
