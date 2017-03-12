@@ -23,11 +23,28 @@
  
 ##Setup the Intel Galileo
 
-###Flashing New Firmare onto the Intel Galileo
+###Pluging in the Intel Galileo Board
  1. Plug in the intel Galileo using the provided 5v wall cable. After a small period of time, 2 green lights should appear on the board. The first light will turn on when the board recieves power and the other will turn on when the board is ready to be connected to a computer.
  2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly.
- 3. On the computer connected to the Intel Galileo, download the latest version of the firmware flashing utility. We have included this file in the folder for version 1.1.0 for Windows and Mac. As of this writing, this is the most up to date firmware. If you would like to download a more up to date firmware please follow this link: https://downloadcenter.intel.com/product/78906/Intel-Galileo-Boards. Select your operating system and the correct file.
- 4. 
+
+###Installing Intel Galileo Driver (Windows PCs only)
+
+On the compuer connected to the Intel Galileo...
+ 1. Download the latest version of the firmware and drivers package. We have included this file in the folder for version 1.1.0 for Windows and Mac. As of this writing, this is the most up to date package. If you would like to download a more up to date software please follow this link: https://downloadcenter.intel.com/product/78906/Intel-Galileo-Boards. Select your operating system and the correct file.
+ 2. Navigate to the folder "Galileo Driver". Right click on the "linux-cdc-acm.inf" file and select "install" from the proceding menu. Upon success, a message "The operation completed successfully" should appear. (screen shot 1)
+ 3. Restart the compuer.
+ 
+##Installing the Arduino Integrated Development Environment(IDE)
+ 1. Download the latest Arduino IDE from their webpage or download the one on our page if you are using Windows OS. As of this writing, 1.8.1 is the most up to date package. Here is the link for that: https://www.arduino.cc/en/main/software.
+ 2. Run the file(s) and follow the on-screen instructions to install the software. (screen shot 2)
+ 3. Open the Arduino IDE when it is done installing. (screen shot 3)
+ 4. In the Arduino IDE...
+   1. Navigate to "Tools" -> "Board" and click on "Board Manager". (screen shot 4)
+   2. In the "Board Manager" window, scroll down to "Intel i586 Boards". Select the most up to date. In this case, it is "1.6.2+1.0" and click "install". The bottom part of the window will state that it is downloading "board definitions". Wait until it is done. If installed correctly, scrolling back down to "Intel i586 Boards" should say "installed" along with the version you installed.
+   3. 
+
+##Updating the Intel Galileo Firmware
+ 1. 
  
 ##Summary
  
