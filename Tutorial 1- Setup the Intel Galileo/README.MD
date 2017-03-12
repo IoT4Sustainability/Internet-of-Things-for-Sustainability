@@ -23,7 +23,11 @@
  
 ##Setup the Intel Galileo
 
-...
+###Flashing New Firmare onto the Intel Galileo
+ 1. Plug in the intel Galileo using the provided 5v wall cable. After a small period of time, 2 green lights should appear on the board. The first light will turn on when the board recieves power and the other will turn on when the board is ready to be connected to a computer.
+ 2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly.
+ 3. On the computer connected to the Intel Galileo, download the latest version of the firmware flashing utility. We have included this file in the folder for version 1.1.0 for Windows and Mac. As of this writing, this is the most up to date firmware. If you would like to download a more up to date firmware please follow this link: https://downloadcenter.intel.com/product/78906/Intel-Galileo-Boards. Select your operating system and the correct file.
+ 4. 
  
 ##Summary
  
