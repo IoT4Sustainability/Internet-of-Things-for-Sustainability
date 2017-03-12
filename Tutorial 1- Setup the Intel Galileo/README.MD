@@ -34,7 +34,7 @@ On the compuer connected to the Intel Galileo...
  2. Navigate to the folder "Galileo Driver". Right click on the "linux-cdc-acm.inf" file and select "install" from the proceding menu. Upon success, a message "The operation completed successfully" should appear. (screen shot 1)
  3. Restart the compuer.
  
-##Installing the Arduino Integrated Development Environment(IDE)
+###Installing the Arduino Integrated Development Environment(IDE)
  1. Download the latest Arduino IDE from their webpage or download the one on our page if you are using Windows OS. As of this writing, 1.8.1 is the most up to date package. Here is the link for that: https://www.arduino.cc/en/main/software.
  2. Run the file(s) and follow the on-screen instructions to install the software. (screen shot 2)
  3. Open the Arduino IDE when it is done installing. (screen shot 3)
@@ -43,7 +43,7 @@ On the compuer connected to the Intel Galileo...
    2. In the "Board Manager" window, scroll down to "Intel i586 Boards". Select the most up to date. (screen shot 5)In this case, it is "1.6.2+1.0" and click "install". The bottom part of the window will state that it is downloading "board definitions". Wait until it is done. If installed correctly, scrolling back down to "Intel i586 Boards" should say "installed" along with the version you installed.
    3. 
 
-##Updating the Intel Galileo Firmware
+###Updating the Intel Galileo Firmware
  1. 
  
 ##Summary
