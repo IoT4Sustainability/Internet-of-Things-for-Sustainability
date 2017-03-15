@@ -54,7 +54,7 @@ On the compuer connected to the Intel Galileo...
 ### Installing the Intel Galileo Operating System (OS)
 On the compuer connected to the Intel Galileo...
  1. Insert the provided SD card or an SD card of at least 4GB in size into the computer.
- 2. Download the Intel Galileo OS from Intel for the latest version or from this GitHub folder. The file is called "SDCard.1.1.1.tar.bz2". Here is the link to that file: https://downloadcenter.intel.com/download/26418/Intel-Galileo-Board-Software-Package?product=78919.
+ 2. Download the Intel Galileo OS from Intel for the latest version. The file is called "SDCard.1.1.1.tar.bz2". Here is the link to that file: https://downloadcenter.intel.com/download/26418/Intel-Galileo-Board-Software-Package?product=78919.
  3. Open the file using 7Zip. (screen shot 8)
  4. In the 7Zip folder, right-click "SDCard.1.1.1.tar" and click open. Wait until the tar file is done untarring. (screen shot 9)
  5. Copy the contents of the "image-full-galileo" folder into the main directory of the SD card. (screen shot 10) (screen shot 11) (screen shot 12)
