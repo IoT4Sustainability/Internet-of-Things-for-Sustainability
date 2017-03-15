@@ -19,7 +19,7 @@
  1. Intel Galileo board
  2. Power and USB cable for Intel Galileo
  3. A computer with an internet connection and 7Zip installed
- 4. A 4 Gigabyte(GB) SD card 
+ 4. A 1 Gigabyte(or bigger) SD card 
  5. An SD card reader
  
 ## Setup the Intel Galileo
@@ -40,24 +40,36 @@ On the compuer connected to the Intel Galileo...
 ### Installing the Arduino Integrated Development Environment(IDE)
 On the compuer connected to the Intel Galileo...
  1. Download the latest Arduino IDE from their webpage or download the one on our page if you are using Windows OS. As of this writing, 1.8.1 is the most up to date package. Here is the link for that: https://www.arduino.cc/en/main/software.
- 2. Run the file(s) and follow the on-screen instructions to install the software. (screen shot 2)
- 3. Open the Arduino IDE when it is done installing. (screen shot 3)
+ 2. Run the file(s) and follow the on-screen instructions to install the software. ![Installing IDE](https://cloud.githubusercontent.com/assets/22579849/23933961/4479c838-08ff-11e7-83bb-9f3648866a9d.PNG)
+ 3. Open the Arduino IDE when it is done installing. ![Open IDE](https://cloud.githubusercontent.com/assets/22579849/23933974/52b7030c-08ff-11e7-945e-995b8be870ee.PNG)
  4. In the Arduino IDE...
-    1. Navigate to "Tools" -> "Board" and click on "Board Manager". (screen shot 4)
-    2. In the "Board Manager" window, scroll down to "Intel i586 Boards". Select the most up to date. (screen shot 5)In this case, it is "1.6.2+1.0" and click "install". The bottom part of the window will state that it is downloading "board definitions". Wait until it is done. If installed correctly, scrolling back down to "Intel i586 Boards" should say "installed" along with the version you installed. (screen shot 6)
+    1. Navigate to "Tools" -> "Board" and click on "Board Manager". ![Board Manger](https://cloud.githubusercontent.com/assets/22579849/23933978/571fd22a-08ff-11e7-94d3-0eb442fe7cf8.PNG)
+    2. In the "Board Manager" window, scroll down to "Intel i586 Boards". Select the most up to date. ![Board Manager Install](https://cloud.githubusercontent.com/assets/22579849/23933980/5a9fe11a-08ff-11e7-9cbe-33adc1fa881a.PNG)
+    
+    In this case, it is "1.6.2+1.0" and click "install". The bottom part of the window will state that it is downloading "board definitions". Wait until it is done. If installed correctly, scrolling back down to "Intel i586 Boards" should say "installed" along with the version you installed. ![Installing Board Packages](https://cloud.githubusercontent.com/assets/22579849/23933982/5d3d7658-08ff-11e7-9e2e-2c25edc7d846.PNG)
 
 ### Updating the Intel Galileo Firmware
 On the compuer connected to the Intel Galileo...
  1. Navigate to the "firmware-updater-1.1.0.exe" file and run it.
- 2. Click update. Ensure not to reomove the power or usb cable from the Intel Galileo. A message should appear when the firmware was installed correctly. (screen shot 7)
+ 2. Click update. Ensure not to reomove the power or usb cable from the Intel Galileo. A message should appear when the firmware was installed correctly. ![Firmware Updater](https://cloud.githubusercontent.com/assets/22579849/23933989/62bd1b60-08ff-11e7-9316-3652e0de7eb5.PNG)
  
 ### Installing the Intel Galileo Operating System (OS)
 On the compuer connected to the Intel Galileo...
- 1. Insert the provided SD card or an SD card of at least 4GB in size into the computer.
+ 1. Insert the provided SD card or an SD card of at least 1GB in size into the computer.
  2. Download the Intel Galileo OS from Intel for the latest version. The file is called "SDCard.1.1.1.tar.bz2". Here is the link to that file: https://downloadcenter.intel.com/download/26418/Intel-Galileo-Board-Software-Package?product=78919.
- 3. Open the file using 7Zip. (screen shot 8)
- 4. In the 7Zip folder, right-click "SDCard.1.1.1.tar" and click open. Wait until the tar file is done untarring. (screen shot 9)
- 5. Copy the contents of the "image-full-galileo" folder into the main directory of the SD card. (screen shot 10) (screen shot 11) (screen shot 12)
+ 
+ 
+ 3. Open the file using 7Zip. ![Install OS 1](https://cloud.githubusercontent.com/assets/22579849/23933990/66ae2d7c-08ff-11e7-9f03-5bb4dd39c9bb.PNG)
+ 
+ 
+ 4. In the 7Zip folder, right-click "SDCard.1.1.1.tar" and click open. Wait until the tar file is done untarring. ![Install OS 2](https://cloud.githubusercontent.com/assets/22579849/23933991/6af04e6a-08ff-11e7-9ec3-6942b4a41c8e.PNG)
+ 
+ 
+ 5. Copy the contents of the "image-full-galileo" folder into the main directory of the SD card. ![Install OS 3](https://cloud.githubusercontent.com/assets/22579849/23933992/6e818ed6-08ff-11e7-87be-f388a6b19d9e.PNG)
+ 
+![Install OS 4](https://cloud.githubusercontent.com/assets/22579849/23933995/733a9d1e-08ff-11e7-9349-07fa7f92ad2f.PNG)
+ 
+![Install OS 5](https://cloud.githubusercontent.com/assets/22579849/23934003/78049552-08ff-11e7-9fe6-73a8e52e0400.PNG)
  6. Eject the SD card from the computer. Insert the SD card into the Intel Galileo. (picture)
  
 ### Blinking LED on Intel Galileo
