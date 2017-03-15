@@ -33,7 +33,7 @@
  ![Board with Power](https://cloud.githubusercontent.com/assets/22579849/23934043/bc8ffe3c-08ff-11e7-877b-aecc007f479a.jpg)
  
  
- 2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly. ![Board with USB](https://cloud.githubusercontent.com/assets/22579849/23934044/bc910d2c-08ff-11e7-9662-ccbdc45b915f.jpg)
+ 2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly. ![Board with USB](https://cloud.githubusercontent.com/assets/22579849/23934690/46f3521e-0904-11e7-9bff-81b326ae6e5b.jpg)
 
 ### Installing Intel Galileo Driver (Windows PCs only)
 
