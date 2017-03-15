@@ -59,6 +59,15 @@ On the compuer connected to the Intel Galileo...
  4. In the 7Zip folder, right-click "SDCard.1.1.1.tar" and click open. Wait until the tar file is done untarring. (screen shot 9)
  5. Copy the contents of the "image-full-galileo" folder into the main directory of the SD card. (screen shot 10) (screen shot 11) (screen shot 12)
  6. Eject the SD card from the computer. Insert the SD card into the Intel Galileo. (picture)
+ 
+### Blinking LED on Intel Galileo
+Now in order to test if the board is working as expected. Run a sample program that will blink the Galileo's builtin LED by doing the following.
+1. Plug the Intel Galileo into the computer (if it is not still plugged in).
+2. Open up the Arduino IDE. Go to "tools" and select "Intel Galileo" as the board. Then select the port. Use the port that the Intel Galileo is connected on. (Usually COM3 or COM4)
+3. Navigate to "Files" -> "Examples" -> "01.Basics". Then select "blink". This is the program that will blink the builtin LED on the Galileo.
+4. Click the upload button(arrow icon). After a few minutes, the Arduino IDE should state "Tranfer complete".
+5. Congrats! The board should now be blinking it's builtin LED.
+
 ## Summary
  
 ### In this tutorial we did the following.
