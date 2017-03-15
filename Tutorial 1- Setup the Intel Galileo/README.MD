@@ -33,6 +33,8 @@
 On the compuer connected to the Intel Galileo...
  1. Download the latest version of the firmware and drivers package. We have included this file in the folder for version 1.1.0 for Windows and Mac. As of this writing, this is the most up to date package. If you would like to download a more up to date software please follow this link: https://downloadcenter.intel.com/product/78906/Intel-Galileo-Boards. Select your operating system and the correct file.
  2. Navigate to the folder "Galileo Driver". Right click on the "linux-cdc-acm.inf" file and select "install" from the proceding menu. Upon success, a message "The operation completed successfully" should appear.
+ 
+ 
 ![Installing Windows Driver](https://cloud.githubusercontent.com/assets/22579849/23929965/9145b500-08e6-11e7-950e-1ef34fe9a166.PNG)
 
  3. Restart the compuer.
@@ -51,7 +53,9 @@ On the compuer connected to the Intel Galileo...
 ### Updating the Intel Galileo Firmware
 On the compuer connected to the Intel Galileo...
  1. Navigate to the "firmware-updater-1.1.0.exe" file and run it.
- 2. Click update. Ensure not to reomove the power or usb cable from the Intel Galileo. A message should appear when the firmware was installed correctly. ![Firmware Updater](https://cloud.githubusercontent.com/assets/22579849/23933989/62bd1b60-08ff-11e7-9316-3652e0de7eb5.PNG)
+ 2. Click update. Ensure not to reomove the power or usb cable from the Intel Galileo. A message should appear when the firmware was installed correctly.
+ 
+ ![Firmware Updater](https://cloud.githubusercontent.com/assets/22579849/23933989/62bd1b60-08ff-11e7-9316-3652e0de7eb5.PNG)
  
 ### Installing the Intel Galileo Operating System (OS)
 On the compuer connected to the Intel Galileo...
@@ -70,6 +74,8 @@ On the compuer connected to the Intel Galileo...
 ![Install OS 4](https://cloud.githubusercontent.com/assets/22579849/23933995/733a9d1e-08ff-11e7-9349-07fa7f92ad2f.PNG)
  
 ![Install OS 5](https://cloud.githubusercontent.com/assets/22579849/23934003/78049552-08ff-11e7-9fe6-73a8e52e0400.PNG)
+
+
  6. Eject the SD card from the computer. Insert the SD card into the Intel Galileo. (picture)
  
 ### Blinking LED on Intel Galileo
