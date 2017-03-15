@@ -22,11 +22,18 @@
  4. A 1 Gigabyte(or bigger) SD card 
  5. An SD card reader
  
+ Most of these are provided  with the Intel Galileo!
+ ![Intel Galileo Box](https://cloud.githubusercontent.com/assets/22579849/23934041/bc8bddde-08ff-11e7-81dc-2a321b0c9131.jpg)
+ 
 ## Setup the Intel Galileo
 
 ### Plugging in the Intel Galileo Board
- 1. Plug in the intel Galileo using the provided 5v wall cable. After a small period of time, 2 green lights should appear on the board. The first light will turn on when the board recieves power and the other will turn on when the board is ready to be connected to a computer.
- 2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly.
+ 1. Plug in the intel Galileo using the provided 5v wall cable. After a small period of time, 2 green lights should appear on the board. The first light will turn on when the board recieves power and the other will turn on when the board is ready to be connected to a computer. ![Board](https://cloud.githubusercontent.com/assets/22579849/23934042/bc8f6256-08ff-11e7-8b69-21833941d653.jpg)
+ 
+ ![Board with Power](https://cloud.githubusercontent.com/assets/22579849/23934043/bc8ffe3c-08ff-11e7-877b-aecc007f479a.jpg)
+ 
+ 
+ 2. Connect the Intel Galileo to a computer using the provided USB cable. It is important that both the USB cable and the power cable are plugged into the board. Otherwise the Intel Galileo will not recieve enough power to function correctly. ![Board with USB](https://cloud.githubusercontent.com/assets/22579849/23934044/bc910d2c-08ff-11e7-9662-ccbdc45b915f.jpg)
 
 ### Installing Intel Galileo Driver (Windows PCs only)
 
@@ -76,7 +83,7 @@ On the compuer connected to the Intel Galileo...
 ![Install OS 5](https://cloud.githubusercontent.com/assets/22579849/23934003/78049552-08ff-11e7-9fe6-73a8e52e0400.PNG)
 
 
- 6. Eject the SD card from the computer. Insert the SD card into the Intel Galileo. (picture)
+ 6. Eject the SD card from the computer. Insert the SD card into the Intel Galileo. ![The SD Card Inserted](https://cloud.githubusercontent.com/assets/22579849/23934047/bca52758-08ff-11e7-881d-0a64d0e1df3e.jpg)
  
 ### Blinking LED on Intel Galileo
 Now in order to test if the board is working as expected. Run a sample program that will blink the Galileo's builtin LED by doing the following.
@@ -85,6 +92,7 @@ Now in order to test if the board is working as expected. Run a sample program t
 3. Navigate to "Files" -> "Examples" -> "01.Basics". Then select "blink". This is the program that will blink the builtin LED on the Galileo.
 4. Click the upload button(arrow icon). After a few minutes, the Arduino IDE should state "Tranfer complete".
 5. Congrats! The board should now be blinking it's builtin LED.
+![Blinking Board](https://cloud.githubusercontent.com/assets/22579849/23934046/bca24100-08ff-11e7-86d8-b1427c3bc9ac.jpg)
 
 ## Summary
  
