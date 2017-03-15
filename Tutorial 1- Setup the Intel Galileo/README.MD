@@ -31,7 +31,9 @@
 
 On the compuer connected to the Intel Galileo...
  1. Download the latest version of the firmware and drivers package. We have included this file in the folder for version 1.1.0 for Windows and Mac. As of this writing, this is the most up to date package. If you would like to download a more up to date software please follow this link: https://downloadcenter.intel.com/product/78906/Intel-Galileo-Boards. Select your operating system and the correct file.
- 2. Navigate to the folder "Galileo Driver". Right click on the "linux-cdc-acm.inf" file and select "install" from the proceding menu. Upon success, a message "The operation completed successfully" should appear. (screen shot 1)
+ 2. Navigate to the folder "Galileo Driver". Right click on the "linux-cdc-acm.inf" file and select "install" from the proceding menu. Upon success, a message "The operation completed successfully" should appear.
+![Installing Windows Driver](https://cloud.githubusercontent.com/assets/22579849/23929965/9145b500-08e6-11e7-950e-1ef34fe9a166.PNG)
+
  3. Restart the compuer.
  
 ### Installing the Arduino Integrated Development Environment(IDE)
