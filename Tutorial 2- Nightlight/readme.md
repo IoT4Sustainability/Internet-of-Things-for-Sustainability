@@ -27,13 +27,13 @@ Digital signals in the scope of our tutorials will refer to the logical interpre
 Analog signals are similar to digital signals in that they represent information by way of a series of separate states. However, while digital signals represent data in a finite number of states, analog signals represent data in an infite number of states. This sounds complicated but it is rather straightforward. An example makes this clear. A traditional volume knob for an mp3 player or computer interprets sound data in a range of values. If a volume knob operated with digital signals, there would only be a few number of volume levels (or potentially only 'on' or 'off').
  
 ## Grove Tactile Button
-The Grove button...
+The Grove button is a button that comes with our Grove shield kits. There is not too much to say about it. A button is a button. It should be noted that this device communicates using digital signals. The button is a simple device that operates solely on 2 different logical states: 'on' and 'off'. When 'on' data and power may flow freely though the device. When 'off' no signal is allowed through the device. This will be useful for our manual activation of our nightlight.
 
 ## Grove Potentiometer
-The Grove potentiometer...
+The Grove potentiometer is a bit more complicated. Much like the button, it connects signal from it's source to desination. However, this device operates using analog signals. Meaning depending on the state (position of the dial), the potentiometer will allow only certain amounts of power from it's input to output. This will be used in the nightlight for fine tuning it's performance dynamically while the nightlight is 'on'.
  
 ## Grove Light Sensor
-The Grove light sensor...
+The Grove light sensor is the first sensor that we will look at. It operates via analog signals, much like the potentiometer. The output signal from this sensor is 'low' when it detects small amounts of light. As the amount of light it detects increases, the output signal increases. Simply, when it is bright out, the sensor value is 'higher' and when it is dark out, the sensor value is 'lower'.
 
 ## Building a Nightlight
 
