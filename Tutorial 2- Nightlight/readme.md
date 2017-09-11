@@ -27,19 +27,43 @@ Digital signals in the scope of our tutorials will refer to the logical interpre
 Analog signals are similar to digital signals in that they represent information by way of a series of separate states. However, while digital signals represent data in a finite number of states, analog signals represent data in an infite number of states. This sounds complicated but it is rather straightforward. An example makes this clear. A traditional volume knob for an mp3 player or computer interprets sound data in a range of values. If a volume knob operated with digital signals, there would only be a few number of volume levels (or potentially only 'on' or 'off').
  
 ## Grove Tactile Button
+<picture>
 The Grove button is a button that comes with our Grove shield kits. There is not too much to say about it. A button is a button. It should be noted that this device communicates using digital signals. The button is a simple device that operates solely on 2 different logical states: 'on' and 'off'. When 'on' data and power may flow freely though the device. When 'off' no signal is allowed through the device. This will be useful for our manual activation of our nightlight.
 
 ## Grove Potentiometer
+<picture>
 The Grove potentiometer is a bit more complicated. Much like the button, it connects signal from it's source to desination. However, this device operates using analog signals. Meaning depending on the state (position of the dial), the potentiometer will allow only certain amounts of power from it's input to output. This will be used in the nightlight for fine tuning it's performance dynamically while the nightlight is 'on'.
  
 ## Grove Light Sensor
+<picture>
 The Grove light sensor is the first sensor that we will look at. It operates via analog signals, much like the potentiometer. The output signal from this sensor is 'low' when it detects small amounts of light. As the amount of light it detects increases, the output signal increases. Simply, when it is bright out, the sensor value is 'higher' and when it is dark out, the sensor value is 'lower'.
 
 ## Building a Nightlight
 
 ### How it works
-This is how a nightlight works...so logically our sensors should do the following...schematics...etc...
+As we already know, a nightlight functions by activating a light when it is dark and deactivates when it is light outside. We can use the LED and Light Sensor to perform this functionality. Based on the outputs from the Light Sensor, we need to decided when to send power to the LED (turn it on). Simply...
+  IF LIGHT_LEVEL > THRESHOLD: LED turns on!
+  ELSE:                       LED turns off!
+  **LIGHT_LEVEL is the analog output value from our light sensor and THRESHOLD is a value that we decide upon (determines when the lED      turns 'on').**
+  
+We can improve our design further by using the output of our potentiometer to adjust the THRESHOLD value. This is illustrated as...
+  MOD_THRESHOLD = THRESHOLD x POT_VAL
+  **MOD_THRESHOLD is the new value used to determine when the LED turns 'on' or 'off'. POT_VAL is the output from the potentiometer.**
+Now the new formula we can use for decision making is...
+  IF LIGHT_LEVEL > MOD_THRESHOLD: LED turns on!
+  ELSE:                           LED turns off!
 
+But we are not done yet! We can add another basic functionality. If we use the button we can manually turn the LED 'on' of 'off'. Since the button operates using digital signals, this is pretty simple. It looks like this...
+  IF BUTTON:  LED turns on!
+  ELSE:       LED turns off!
+  **BUTTON is the output value from the button. When the button is depressed, BUTTON is true. When the button is not depressed, BUTTON       is false. So 'IF BUTTON: LED turns on!' reads as: 'if the button is depressed, then turn on the LED.**
+
+Now we can combine all of these functionalities to create this logic statement...
+  IF LIGHT_LEVEL > MOD_THRESHOLD OR BUTTON: LED turns on!
+  ELSE:                                     LED turns off!
+  
+The above state statement reads as 'If the light level is greater than the modified threshold or the button is depressed, then turn on the LED'. Pretty simple, eh? Please take a moment to download the nightlight code and review it. Don't worry about understanding what each line of code does! But see if you can find where the code is running the above logic.
+  
 ### Assembling the Sensors
 Step by step on installing the sensors...
 
