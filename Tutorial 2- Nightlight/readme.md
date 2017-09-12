@@ -75,7 +75,7 @@ The above state statement reads as 'If the light level is greater than the modif
 The Grove shield is an interface that will allow us to more easily connect sensors and other useful components to our board. Please take the board and carefully insert it onto the pins on the Intel Galileo Board. **NOTE**: Ensure that the board is not powered 'on' at this point. When the board is powered 'on' later, please check that the LED on the shield lights up. If it does not, the shield is likely not sitting on the pins evenly or is not fully depressed onto the Intel Galileo.
 <Fully installed picture> <Picture with LED on>
 
-#### Installing the components...
+#### Installing the components
 Install the sensors using the provided quick connect cables. Please install each of the components into the corresponding ports...<br />
 
 Port | Component
