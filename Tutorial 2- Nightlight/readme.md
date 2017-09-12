@@ -37,6 +37,10 @@ The Grove potentiometer is a bit more complicated. Much like the button, it conn
 ## Grove Light Sensor
 <picture>
 The Grove light sensor is the first sensor that we will look at. It operates via analog signals, much like the potentiometer. The output signal from this sensor is 'low' when it detects small amounts of light. As the amount of light it detects increases, the output signal increases. Simply, when it is bright out, the sensor value is 'higher' and when it is dark out, the sensor value is 'lower'.
+  
+## Light Emiting Diode (LED)
+<picture of LED> <picure of LED socket kit>
+The light emiting diode or LED for short. The LED emits light when it recieves input. The LED operates using There should be three LEDs included in each kit (red, blue, and green). It is important to note that the LED has a cathode lead (negative) and annode lead (positive). The lead that is longest is the annode lead. The LED then plugs directly into the LED socket kit provided. It is important to plug the LED in properly. Please plug the LED's cathode end near the '-' marked terminal and the LED's annode end near the '+'.
 
 ## Building a Nightlight
 
@@ -63,9 +67,11 @@ Now we can combine all of these functionalities to create this logic statement..
   + ELSE:                                     LED turns off!<br />
   
 The above state statement reads as 'If the light level is greater than the modified threshold or the button is depressed, then turn on the LED'. Pretty simple, eh? Please take a moment to download the nightlight code and review it. Don't worry about understanding what each line of code does! But see if you can find where the code is running the above logic.
-  
+ 
 ### Assembling the Sensors
-Step by step on installing the sensors...
+#### Installing the Grove Shield...
+#### Installing the components...
+Install the sensors
 
 ### A Look at the Code
 How to open the code...undertanding what the code is doing (high level)...how to run the program
