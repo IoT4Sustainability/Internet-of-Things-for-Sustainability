@@ -69,12 +69,19 @@ Now we can combine all of these functionalities to create this logic statement..
 The above state statement reads as 'If the light level is greater than the modified threshold or the button is depressed, then turn on the LED'. Pretty simple, eh? Please take a moment to download the nightlight code and review it. Don't worry about understanding what each line of code does! But see if you can find where the code is running the above logic.
  
 ### Assembling the Sensors
-#### Installing the Grove Shield...
-#### Installing the components...
-Install the sensors
+#### Installing the Grove Shield
+<Grove Shield pic>
+The Grove shield is an interface that will allow us to more easily connect sensors and other useful components to our board. Please take the board and carefully insert it onto the pins on the Intel Galileo Board. **NOTE**: Ensure that the board is not powered 'on' at this point. When the board is powered 'on' later, please check that the LED on the shield lights up. If it does not, the shield is likely not sitting on the pins evenly or is not fully depressed onto the Intel Galileo.
+<Fully installed picture> <Picture with LED on>
 
-### A Look at the Code
-How to open the code...undertanding what the code is doing (high level)...how to run the program
+#### Installing the components...
+Install the sensors using the provided quick connect cables. Please install each of the components into the corresponding ports...<br />
+| Port | Component |
+|---|---|
+A0 | Light Sensor
+A1 | Potentiometer
+D4 | LED
+D8 | Tactile Button
 
 ### Results
 The night light should now be working...troubleshooting tips...pictures of it working...congrats!
