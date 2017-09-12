@@ -96,7 +96,7 @@ After waiting a few minutes, the boards should now be running the NightLight pro
 
 ![Working](https://user-images.githubusercontent.com/22579849/30304758-fe1fd81a-9723-11e7-8d38-fe3f28e31b4d.jpg)
 
-## Summary
+## Conclusion
  
 ### In this tutorial we did the following.
  
@@ -105,3 +105,5 @@ After waiting a few minutes, the boards should now be running the NightLight pro
   3. Walked through the Nightlight logic and code.
   4. Installed the physical components.
   5. Relished in our vicotry. Hurrah! A nightlight!
+  
+## Bonus Challenge
