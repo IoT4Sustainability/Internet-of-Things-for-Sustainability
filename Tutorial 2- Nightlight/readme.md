@@ -4,7 +4,7 @@
 
 ### In this tutorial you will...
   1. Be introduced to the concepts of digital and analog signals
-  2. Learn to use the light sensor, button, and potentiometer
+  2. Learn to use the light sensor, button, potentiometer, and LED
   3. Build a working nightlight
   
 ## Explanation
@@ -17,6 +17,7 @@ However before we can start to build the nightlight, we need to understand some 
  3. Grove button
  4. Grove potentiometer
  5. Grove light sensor
+ 6. Grove LED and LED Socket Kit
  
 ## Digital vs. Analog Signals
 
@@ -76,22 +77,31 @@ The Grove shield is an interface that will allow us to more easily connect senso
 
 #### Installing the components...
 Install the sensors using the provided quick connect cables. Please install each of the components into the corresponding ports...<br />
-| Port | Component |
-|---|---|
+
+Port | Component
+--- | ---
 A0 | Light Sensor
 A1 | Potentiometer
 D4 | LED
 D8 | Tactile Button
 
+<pic of installed parts>
+
+After ensuring that all of the components were installed in the correct port, please plug in the power cable to the Intel Galileo and connect the USB cable to the board and your computer. Open the Arduino IDE, compile the NightLight.ino, and upload it to your board.
+
+<pic of board with shield LED onand all cables connected>
+
 ### Results
-The night light should now be working...troubleshooting tips...pictures of it working...congrats!
+After waiting a few minutes, the boards should now be running the NightLight program. A quick test can be performed by pressing the button. If the LED lights up, the project was compiled and loaded successfully.
+
+<pictures of board working>
 
 ## Summary
  
 ### In this tutorial we did the following.
  
   1. Learned about the difference between Digital and Analog signals.
-  2. Introduced the light sensor, button, and potentiometer.
-  3. Installed the physical components.
-  4. Walked through the Nightlight logic and code.
+  2. Introduced the light sensor, button, potentiometer, and LED.
+  3. Walked through the Nightlight logic and code.
+  4. Installed the physical components.
   5. Relished in our vicotry. Hurrah! A nightlight!
