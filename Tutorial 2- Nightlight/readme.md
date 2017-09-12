@@ -28,19 +28,22 @@ Digital signals in the scope of our tutorials will refer to the logical interpre
 Analog signals are similar to digital signals in that they represent information by way of a series of separate states. However, while digital signals represent data in a finite number of states, analog signals represent data in an infite number of states. This sounds complicated but it is rather straightforward. An example makes this clear. A traditional volume knob for an mp3 player or computer interprets sound data in a range of values. If a volume knob operated with digital signals, there would only be a few number of volume levels (or potentially only 'on' or 'off').
  
 ## Grove Tactile Button
-<picture>
+![TheButton](https://user-images.githubusercontent.com/22579849/30304751-fe0b38c4-9723-11e7-99f6-e4d23cbe5a43.jpg)
 The Grove button is a button that comes with our Grove shield kits. There is not too much to say about it. A button is a button. It should be noted that this device communicates using digital signals. The button is a simple device that operates solely on 2 different logical states: 'on' and 'off'. When 'on' data and power may flow freely though the device. When 'off' no signal is allowed through the device. This will be useful for our manual activation of our nightlight.
 
 ## Grove Potentiometer
-<picture>
+![ThePotentiometer](https://user-images.githubusercontent.com/22579849/30304755-fe0be2a6-9723-11e7-8174-451a149d5394.jpg)
 The Grove potentiometer is a bit more complicated. Much like the button, it connects signal from it's source to desination. However, this device operates using analog signals. Meaning depending on the state (position of the dial), the potentiometer will allow only certain amounts of power from it's input to output. This will be used in the nightlight for fine tuning it's performance dynamically while the nightlight is 'on'.
  
 ## Grove Light Sensor
-<picture>
+![TheLightSensor](https://user-images.githubusercontent.com/22579849/30304756-fe14d58c-9723-11e7-8b54-0b714c42f02a.jpg)
 The Grove light sensor is the first sensor that we will look at. It operates via analog signals, much like the potentiometer. The output signal from this sensor is 'low' when it detects small amounts of light. As the amount of light it detects increases, the output signal increases. Simply, when it is bright out, the sensor value is 'higher' and when it is dark out, the sensor value is 'lower'.
   
 ## Light Emiting Diode (LED)
-<picture of LED> <picure of LED socket kit>
+![TheLEDs](https://user-images.githubusercontent.com/22579849/30304752-fe0b8a18-9723-11e7-9c91-81eacbca3ec1.jpg)<br />
+![theSocket](https://user-images.githubusercontent.com/22579849/30304757-fe1e5c92-9723-11e7-885c-f3aab624e97b.jpg)<br />
+![theLEDSock](https://user-images.githubusercontent.com/22579849/30304753-fe0bb09c-9723-11e7-9da0-0a7f78bb956e.jpg)
+  
 The light emiting diode or LED for short. The LED emits light when it recieves input. The LED operates using There should be three LEDs included in each kit (red, blue, and green). It is important to note that the LED has a cathode lead (negative) and annode lead (positive). The lead that is longest is the annode lead. The LED then plugs directly into the LED socket kit provided. It is important to plug the LED in properly. Please plug the LED's cathode end near the '-' marked terminal and the LED's annode end near the '+'.
 
 ## Building a Nightlight
@@ -71,9 +74,8 @@ The above state statement reads as 'If the light level is greater than the modif
  
 ### Assembling the Sensors
 #### Installing the Grove Shield
-<Grove Shield pic>
+![Shield](https://user-images.githubusercontent.com/22579849/30304754-fe0bea08-9723-11e7-813a-0b0ca2d68baf.jpg)
 The Grove shield is an interface that will allow us to more easily connect sensors and other useful components to our board. Please take the board and carefully insert it onto the pins on the Intel Galileo Board. **NOTE**: Ensure that the board is not powered 'on' at this point. When the board is powered 'on' later, please check that the LED on the shield lights up. If it does not, the shield is likely not sitting on the pins evenly or is not fully depressed onto the Intel Galileo.
-<Fully installed picture> <Picture with LED on>
 
 #### Installing the components
 Install the sensors using the provided quick connect cables. Please install each of the components into the corresponding ports...<br />
@@ -85,16 +87,14 @@ A1 | Potentiometer
 D4 | LED
 D8 | Tactile Button
 
-<pic of installed parts>
-
 After ensuring that all of the components were installed in the correct port, please plug in the power cable to the Intel Galileo and connect the USB cable to the board and your computer. Open the Arduino IDE, compile the NightLight.ino, and upload it to your board.
 
-<pic of board with shield LED onand all cables connected>
+![Assembled](https://user-images.githubusercontent.com/22579849/30304750-fe00e0b8-9723-11e7-9600-4a7790477c3d.jpg)
 
 ### Results
 After waiting a few minutes, the boards should now be running the NightLight program. A quick test can be performed by pressing the button. If the LED lights up, the project was compiled and loaded successfully.
 
-<pictures of board working>
+![Working](https://user-images.githubusercontent.com/22579849/30304758-fe1fd81a-9723-11e7-8d38-fe3f28e31b4d.jpg)
 
 ## Summary
  
