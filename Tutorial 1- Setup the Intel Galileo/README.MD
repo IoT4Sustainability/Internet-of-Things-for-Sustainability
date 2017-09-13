@@ -5,7 +5,7 @@
 ### In this tutorial you will...
   1. Get the Intel Galileo firmware updated and install necessary drivers
   2. Installing the Operating System (OS) on the Intel Galileo
-  3. Installl the Arduino software development environment
+  3. Install the Arduino software development environment
   4. Run the example blinking light program on the Intel Galileo
   
 ## Explanation
