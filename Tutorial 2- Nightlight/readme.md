@@ -105,8 +105,6 @@ After waiting a few minutes, the boards should now be running the NightLight pro
   + ELSE:                                     LED turns off!<br />
   If we wanted to change the logic to only check the light level against the threshold once the button has been depressed at least once,   what would our logic look like then? Discuss with your peers.
 
-## Conclusion
- 
 ### In this tutorial we did the following.
  
   1. Learned about the difference between Digital and Analog signals.
