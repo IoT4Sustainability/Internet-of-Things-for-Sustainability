@@ -1,4 +1,6 @@
 # Creating a Nightlight
+### Challenge Level: 1/5
+![Working](https://user-images.githubusercontent.com/22579849/30304758-fe1fd81a-9723-11e7-8d38-fe3f28e31b4d.jpg) <br />
 
 ## Introduction
 
@@ -94,7 +96,14 @@ After ensuring that all of the components were installed in the correct port, pl
 ### Results
 After waiting a few minutes, the boards should now be running the NightLight program. A quick test can be performed by pressing the button. If the LED lights up, the project was compiled and loaded successfully.
 
-![Working](https://user-images.githubusercontent.com/22579849/30304758-fe1fd81a-9723-11e7-8d38-fe3f28e31b4d.jpg)
+![Working](https://user-images.githubusercontent.com/22579849/30304758-fe1fd81a-9723-11e7-8d38-fe3f28e31b4d.jpg) <br />
+
+### Exploratory Questions
+ 1.  What happens when the potentiometer is turned all the way to the left? What about when it is turned to the right? Why do you think that this is happening?
+ 2. Our logic looked like:
+  + IF LIGHT_LEVEL < MOD_THRESHOLD OR BUTTON: LED turns on!<br />
+  + ELSE:                                     LED turns off!<br />
+  If we wanted to change the logic to only check the light level against the threshold once the button has been depressed at least once,   what would our logic look like then? Discuss with your peers.
 
 ## Summary
  
@@ -105,3 +114,8 @@ After waiting a few minutes, the boards should now be running the NightLight pro
   3. Walked through the Nightlight logic and code.
   4. Installed the physical components.
   5. Relished in our vicotry. Hurrah! A nightlight!
+  
+## BONUS CHALLENGE(S)
+
+### Nightlight 2.0
+Attempt to modify the code in the NightLight.ino file to make the LED blink it's light at a rate of speed based on the value of the potentiometer. Ex. If potentiometer has a higher value, LED blinks faster. If potentiometer has a lower value, LED blinks more slowly.
