@@ -6,10 +6,9 @@
   1. Learn the structure of a basic arduino file
   2. Variables and types
   3. Conditionals and loops (if, else, while)
-  4. Include libraries
 
 ## Explanation
-This tutorial will be a basic crash course into the fundamentals of programming your own arduino programs to run on your Galileo board. We will take a look at the code used in the previous Nightlight program, and work on examples similar to that code. The goal is to learn how to write and read simple arduino programs for our own Galileo board. We will cover how to include pre-made libraries, how to declare and use variables, and the importance of conditional statements and loops. 
+This tutorial will be a basic crash course into the fundamentals of programming your own arduino programs to run on your Galileo board. We will take a look at the code used in the previous Nightlight program, and work on examples similar to that code. The goal is to learn how to write and read simple arduino programs for our own Galileo board. We will cover the structure of an Arduino program, how to declare and use variables, and conditional statements and loops. 
 An important note is that the code we will be using for our Arduino programs mostly follows the syntax of C, C++, and any languages like them, along with its own Arduino flare. Each piece of code will be shown below and hopefully explained in an easy to understand way.
 
 ## Required Materials
