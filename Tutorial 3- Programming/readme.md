@@ -71,9 +71,11 @@ Now that we have saved the state of the button, we need to find a way to use tha
 >  if( buttonInput == 1 ) {
 >
 >    digitalWrite( 4, HIGH );
+
 >  } else {
 >
 >    digitalWrite( 4, NULL );
+
 >  }
 
 That code will check if buttonInput, which reads whether the button is pressed, is equal to one. If it is, that means the buttonInput variable was set to 1 which is the value the button returns in digitalRead() when it is pressed. Notice the TWO equals signs, this is used to compare two values, and is resolved into a TRUE if the statement makes sense, or FALSE if it doesn't. When the button is pressed, this expression will evaluate to TRUE, and digitalWrite( 4, HIGH ) will run, which will turn the LED on. 
