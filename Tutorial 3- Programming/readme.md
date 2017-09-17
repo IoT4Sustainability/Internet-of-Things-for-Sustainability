@@ -53,11 +53,43 @@ This is the section that you would put the bulk of the code you wanted to run. I
 The Galileo board handles the pins through the use of the digitalRead() and digitalWrite() functions. The digitalRead() function takes a digital port value, such as 1 through 8, as its one and only input value. the digitalWrite() function takes in two input values, and they are, in order, a digital port value, and a keyword such as HIGH, LOW, or NULL. DigitalWrite() sends an amount of power specified by the keyword to the digital port specified, with HIGH being the equivalent of On, and NULL being the equivalent of Off. 
 
 >  digitalRead( 8 );          // reads in the state of the digital port 8
-
+>
 >  digitalWrite( 4, HIGH );   // sends a HIGH power signal to the digital port 4, turning it on
 
-You might be thinking, what use is there in just reading in a value from the digital port? If you just read it in, it does nothing and the value is lost. Therefore we need to find a way to save that value in the code. This is where variables come into play. A variable is a single word that we can designate a value to. We can name these variables anything we want, as long as the names only have letters and numbers in them. The following is an example of a variable type of int, which only accepts integer numbers as its value.
+You might be thinking, what use is there in just reading in a value from the digital port? If you just read it in, it does nothing and the value is lost. Therefore we need to find a way to save that value in the code. This is where variables come into play. A variable is a single word that we can designate a value to. We can name these variables anything we want, as long as the names only have letters and numbers in them. The following is an example of a variable being declared of type of int, which only accepts integer numbers as its value.
 
 >  int buttonInput;
 
-This is added as one of the first lines in the main loop() to be used elsewhere in the program. Go ahead and add an integer variable to the loop, and name it whatever you want. Be sure to end the statement with a semicolon. When you want to use the variable elsewhere, you don't need to use int anymore, and you simply call the variable by its name, such as buttonInput. 
+This is added as one of the first lines in the main loop() to be used elsewhere in the program. Go ahead and add an integer variable to the loop, and name it whatever you want. Be sure to end the statement with a semicolon. When you want to use the variable elsewhere, you don't need to use int anymore, and you simply call the variable by its name, such as buttonInput. This variable is what we needed to catch the value of the button using digitalRead(). 
+
+>  buttonInput = digitalRead( 8 );
+
+A single equals sign is used to set the value of a variable to whatever value after the equals. We can add that line of code after the line with int buttonInput. IMPORTANT: You MUST declare a variable before you can use it anywhere else in the program, so always put the declarations towards the start of the main loop. 
+
+Now that we have saved the state of the button, we need to find a way to use that information. This is where the if() statement comes in. An if() statement reads in an expression between the parenthesis, and then executes the next line of code if the expression is true. Otherwise, the code between the if's curly braces are ignored for that loop. An else statement can be added after the curly braces to provide an alternative section of code to run if the expression is not true, or false. 
+
+>  if( buttonInput == 1 ) {
+>
+>    digitalWrite( 4, HIGH );
+>  } else {
+>
+>    digitalWrite( 4, NULL );
+>  }
+
+That code will check if buttonInput, which reads whether the button is pressed, is equal to one. If it is, that means the buttonInput variable was set to 1 which is the value the button returns in digitalRead() when it is pressed. Notice the TWO equals signs, this is used to compare two values, and is resolved into a TRUE if the statement makes sense, or FALSE if it doesn't. When the button is pressed, this expression will evaluate to TRUE, and digitalWrite( 4, HIGH ) will run, which will turn the LED on. 
+
+In the case that the buttonInput == 1 expression is FALSE, it will skip the code between the curly braces of the if, and if there is an else statement after the curly braces, it will then run the code of the else. So in this case, when the buttonInput is 0 from not being pressed, it will run the code digitalWrite( 4, NULL ), which will turn the LED off. 
+
+Once we have added that conditional to the main loop of our program (make sure that the amount of left parenthesis and curl braces, and right parenethesis and curly braces are equal and in the right places), we are ready to finally run our program. Make sure the Galileo board is powered and plugged into the computer, and then press the Upload button to compile and send the program to our board. If all went well, then the program is sent to our board, and if we hook up the button and LED to the ports we chose earlier, the LED should turn on when we press the button, and turn off when we let go of the button. If not, then the IDE ran into a compile error and some red text has shown on the bottom of it. Try to figure out what went wrong from the error message, and if you can't figure it out, feel free to ask your peers or an aid for help. 
+
+## Results
+This tutorial will hopefully have taught you about some very basic elements of programming. Looking at past and future code will hopefully reinforce the ideas taught here, and let you more easily maneuvre through the code that we have written. There are several topics that we haven't covered because there  is more stuff than is possible to write in this tutorial, so if you ever have questions about what a bit of syntax means, simply ask an aid for help in clarifying what some piece of code means or why it is there. 
+
+## Exploratory Questions
+
+## We accomplished the following in this tutorial
+
+  1. Discussed the basic structure of an Arduino program
+  2. Learned how to declare and use variables of int type
+  3. Briefly went over what a function is and how to use it
+  4. Learned how to use if and else statements. 
