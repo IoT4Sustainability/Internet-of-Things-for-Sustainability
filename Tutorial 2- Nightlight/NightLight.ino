@@ -20,8 +20,8 @@ void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(4, OUTPUT); //LED (night light)
   pinMode(8, INPUT);  //button (manual on switch)
-  pinMode(1, INPUT);  //potentiometer (fine tunes THRESHOLD value)
-  pinMode(0, INPUT);  //light sensor
+  pinMode(A1, INPUT);  //potentiometer (fine tunes THRESHOLD value)
+  pinMode(A0, INPUT);  //light sensor
 }
 
 // the loop function runs over and over again forever
