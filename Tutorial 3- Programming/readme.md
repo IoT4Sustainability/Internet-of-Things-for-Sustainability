@@ -53,6 +53,7 @@ This is the section that you would put the bulk of the code you wanted to run. I
 The Galileo board handles the pins through the use of the digitalRead() and digitalWrite() functions. The digitalRead() function takes a digital port value, such as 1 through 8, as its one and only input value. the digitalWrite() function takes in two input values, and they are, in order, a digital port value, and a keyword such as HIGH, LOW, or NULL. DigitalWrite() sends an amount of power specified by the keyword to the digital port specified, with HIGH being the equivalent of On, and NULL being the equivalent of Off. 
 
 >  digitalRead( 8 );          // reads in the state of the digital port 8
+
 >  digitalWrite( 4, HIGH );   // sends a HIGH power signal to the digital port 4, turning it on
 
 You might be thinking, what use is there in just reading in a value from the digital port? If you just read it in, it does nothing and the value is lost. Therefore we need to find a way to save that value in the code. This is where variables come into play. A variable is a single word that we can designate a value to. We can name these variables anything we want, as long as the names only have letters and numbers in them. The following is an example of a variable type of int, which only accepts integer numbers as its value.
