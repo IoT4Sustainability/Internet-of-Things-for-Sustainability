@@ -22,7 +22,7 @@ The Ambient Noise Monitoring device will listen to the noise level in the room, 
  ![parts](https://user-images.githubusercontent.com/27307550/30575227-2dcdb38a-9cb4-11e7-95b8-bfc429507e36.jpg)
  
  
-##Core Concepts
+## Core Concepts
  
 ### Running Average
 A Running Average is the average of a data set over the most recent period of time.  For example, if you were to take a measurement of the temperature outside once an hour for 10 hours you would be taking an average of those ten data points.  To keep a running average of the most recent ten hours would mean that when you measured your eleventh hour you would discard the oldest data point you collected and re-compute the average.
