@@ -11,7 +11,7 @@
   
 ## Explanation
 In this tutorial we will be building a working nightlight. This nightlight will detect the light level in it's surroundings and make a  decision based on the light level to turn on an LED or not. The LED will have a manual activation via a tactile button. Meaning the light can be turned on with a button. The nighlight will also adjust it's decision making based on the position of a potentiometer (turn knob).
-However before we can start to build the nightlight, we need to understand some basic concepts of signals and understand how each sensor and actuator works. Once that it done, we will begin assembling the nightlight components and review the logic of how the nightlight works.
+However before we can start to build the nightlight, we need to understand some basic concepts of signals and understand how each sensor and actuator works. Once that is done, we will begin assembling the nightlight components and review the logic of how the nightlight works.
  
 ## Required Materials
  1. Intel Galileo board kit and PC with Arduino IDE installed (see Tutorial 1)
