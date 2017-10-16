@@ -50,8 +50,6 @@ Go ahead and add another pinMode() call to setup another digital port of your ch
 
 >  pinMode(A0, ____);
 
-The setup section is usually only filled with pinMode declarations, and should be used only for that until we show you other statements you can add to the setup section. The bulk of the code that we will be adding will be included within the loop() section.
-
 ### Main Loop
 The main loop() function, shown below, repeatedly runs after setup() is complete until the power cable is unplugged or the machine turns off. This is where we will be inserting most of our own code, asside from defining certain pins to certain values. 
 
