@@ -3,9 +3,10 @@
 ## Introduction
 
 ### Topics for this tutorial
-  1. Learn the structure of a basic arduino file
-  2. Variables and types
-  3. Conditionals and loops (if, else, while)
+  1. Learn the basic format of C code
+  2. Learn the structure of a basic arduino file
+  3. Variables and types
+  4. Conditionals and loops (if, else, while)
 
 ## Explanation
 This tutorial will be a basic crash course into the fundamentals of programming your own arduino programs to run on your Galileo board. We will take a look at the code used in the previous Nightlight program, and work on examples similar to that code. The goal is to learn how to write and read simple arduino programs for our own Galileo board. We will cover the structure of an Arduino program, how to declare and use variables, and conditional statements and loops. 
@@ -19,10 +20,20 @@ An important note is that the code we will be using for our Arduino programs mos
   5. Grove LED
 
 ## Arduino Program Structure
-### Setup Function
+### Programming Concepts
 We will start by opening up our Arduino Interactive Development Environment, or IDE for short. After opening the Arduino software, we should start a new file by clicking the blue New File button at the top, which will take us to a screen like this. 
 ![Opening IDE](https://cloud.githubusercontent.com/assets/22579849/23933974/52b7030c-08ff-11e7-945e-995b8be870ee.PNG)
-To begin programming our own first arduino program, we need to understand the major components to include in a .ino file. There are two key parts that we need to add to our own program, and fortunately, the IDE has supplied us with both of those things, albeit empty. When the program is uploaded to the Galileo board, the first thing that runs is setup. An important thing to notice is that a double slash mark, or //, in the arduino code, denotes a comment and everything past the slashes will have no impact on the code. The code looks like this:
+To begin programming our own first arduino program, we need to understand the major components to include in a .ino file. There are two key parts that we need to add to our own program, and fortunately, the IDE has supplied us with both of those things, but empty.  
+First off, the programs that we will be creating throughout this workshop follow the C programming format, which you will hopefully learn by observing the programs in the workshop. The most important rule of programming, is that the code you type in must fit a certain format. Many errors that you will face early on occur because of a missing letter, number or other symbol. Think about the following line of C code:
+
+>  int my_favorite_number = 4;
+
+There are quite a few things going on with this snippet of code. In english, it looks like I am saying that my favorite number is 4. This is close to what it means in the code. The first element of that line, "int", is short for integer, which is any whole number with no following decimal places. Used in code, this states that the word coming after it is going to be a new variable, which is an element used by the program. This sets a place in memory and inserts the value 4 into it, so if we type anywhere in the code the variable "my_favorite_number", it will take out that word and insert a 4 in its place. This is critically important to programming when you consider that you are able to adjust the contents of the variable anywhere in the code. The semicolon at the end is specific to C, and usually declares the end of a line of code. 
+
+If we look at our Arduino IDE, we will see that there is a line called "void setup() {", and one called "void loop() {". As you can see, those lines don't end with a semicolon, and instead end with a curly brace, which signifies that all of the code within the left curly brace { and right curly brace } are a part of the section named before it, such as setup, which we will discuss next. 
+
+### Galileo Program Setup
+When the program is uploaded to the Galileo board, the first thing that runs is setup. An important thing to notice is that a double slash mark, or //, in the arduino code, denotes a comment and everything past the slashes will have no impact on the code. The code looks like this:
 
 >  void setup() {
 >  // put your setup code here, to run once:
@@ -39,8 +50,10 @@ Go ahead and add another pinMode() call to setup another digital port of your ch
 
 >  pinMode(A0, ____);
 
+The setup section is usually only filled with pinMode declarations, and should be used only for that until we show you other statements you can add to the setup section. The bulk of the code that we will be adding will be included within the loop() section.
+
 ### Main Loop
-The main loop() function, shown below, repeatedly runs after setup() is complete until the power cable is unplugged or the machine turns off. 
+The main loop() function, shown below, repeatedly runs after setup() is complete until the power cable is unplugged or the machine turns off. This is where we will be inserting most of our own code, asside from defining certain pins to certain values. 
 
 >  void loop() {
 >    // put your main code here, to run repeatedly:
