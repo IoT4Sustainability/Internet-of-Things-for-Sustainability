@@ -1,4 +1,4 @@
-# Introduction to Basic Programming
+# Introduction to Programming with Arduino C/C++
 
 ## Introduction
 
