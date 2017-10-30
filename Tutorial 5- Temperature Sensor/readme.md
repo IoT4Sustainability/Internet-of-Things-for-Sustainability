@@ -54,6 +54,7 @@ After ensuring that all of the components were installed in the correct port, pl
 This project will exclusively use given code (though feel free to personalize it!) but it is good practice to avoid copy pasting, as simply typing the code in will help you process how each line works. 
 Includes
 At the beginning of the file we simply include the header files that we will use functions from. 
+
  ![image](https://user-images.githubusercontent.com/24983989/32183416-7d41ce20-bd56-11e7-8ecc-b9d0f952f411.png)
  
 ### Declarations
@@ -61,26 +62,31 @@ Next, we declare all of the objects and variables we will use globally. This is 
 	Note: Two basic types of variables are used here:
 		Int declares an integer value, which will truncate (drop) any decimal value
 		Float declares a floating point value, which will maintain decimal values 
+		
  ![image](https://user-images.githubusercontent.com/24983989/32183421-81a0e848-bd56-11e7-828a-bdb64c09a290.png)
  
 ### Setup
 The setup function is used to configure and start peripheral communications that the board will need to use. 
 Note: It is generally a good idea to initialize serial communications when programming in the Arduino IDE. It will allow you to print out values from within your code that you can simply read off of the serial monitor. This makes it much easier to determine what is happening within your code. Make sure that the baud rate (rate at which bits are sent on the line, in this case 9600) is matched to the baud rate on the receiving end. 
+
 ![image](https://user-images.githubusercontent.com/24983989/32183439-87892248-bd56-11e7-96c6-0c5866dbf2ba.png)
  
 ### Reading Inputs
 We now begin the loop, which is the backbone of the Arduino environment. This function will loop through its code infinitely until something makes it stop. 
 The first step in the loop is to read the inputs and set the corresponding variables. First, if we read a non-zero value on the button, we toggle our “toggle” variable. We then delay for half a second to allow the button to be released and settle to zero. There are cleaner ways of doing this once we can’t afford that delay time, but for now this keeps it simple. 
+
 ![image](https://user-images.githubusercontent.com/24983989/32183451-8da8b4e0-bd56-11e7-86a5-fe0f3bf4b20c.png)
  
  
 ### Calculations
 Now that we have the readings from our sensors we need to calculate our outputs. The first two equations bring the temperature reading from a scale of 0-1023 to a temperature in Celsius. Next we take a rolling average and compare the current temperature to it to determine the LCD color. Feel free to change the r and b equations to personalize your project!
+
 ![image](https://user-images.githubusercontent.com/24983989/32183456-92039028-bd56-11e7-8247-f8a23bec922d.png)
  
 
 ### Outputs
 We are now ready to output our calculated values to the LCD. We use the LCD library to output the temperature in the units determined by toggle as well as to color it by the values of our r and b equations. 
+
 ![image](https://user-images.githubusercontent.com/24983989/32183461-974f201a-bd56-11e7-8c2d-3fdbd54b4845.png)
  
 ### Compile
