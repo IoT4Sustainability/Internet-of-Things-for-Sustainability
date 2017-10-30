@@ -28,6 +28,6 @@ The phrase within the quotation marks, Hello World, are the contents of the stri
 ## LCDScreenBasic
 We can finally get to the interesting part of the tutorial, setting up our board and giving it a program to run. The picture below shows the setup of our board. 
 
-![img_20171029_213914354](https://user-images.githubusercontent.com/14320086/32156019-19f2c012-bcf8-11e7-9b1c-599654935caf.jpg) <br />
+![lcdscreen](https://user-images.githubusercontent.com/14320086/32156182-0b723404-bcf9-11e7-8688-839ebd2e820e.jpg) <br />
 
 We need our Intel Galileo board and shield, a single connector, and the LCD screen. The LCD screen needs to be connected to an IC2 port, of which there are four on the shield. Any one of them will work for our screen. 
