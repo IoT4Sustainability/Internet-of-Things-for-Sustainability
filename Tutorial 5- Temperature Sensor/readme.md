@@ -1,6 +1,6 @@
 # Creating a Temperature Sensor
 ### Challenge Level: 1/5
-![Working](https://user-images.githubusercontent.com/22579849/30304758-fe1fd81a-9723-11e7-8d38-fe3f28e31b4d.jpg) <br />
+![image](https://user-images.githubusercontent.com/24983989/32183398-7190250e-bd56-11e7-8a59-46504574b320.png)
 
 ## Introduction
 
