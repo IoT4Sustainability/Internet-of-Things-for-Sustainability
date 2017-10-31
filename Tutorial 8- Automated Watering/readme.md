@@ -19,7 +19,7 @@ The Automated Watering device monitors the moister content of the soil it is pla
  5. 2x Grove Cables
  
  
-##Core Concepts
+## Core Concepts
  
 ### Polling a Pin
 Polling is when a microcontroller periodically checks the value of a sensor.  By default our code polls the sensor every 1 second using a software delay.
@@ -71,6 +71,9 @@ After waiting a few minutes, the board should now be running the Automated Water
 ### Average Soil Moisture
 Since there are different soil moistures at different locations in a large pot we need to read from different locations to make our device more accurate.  Modify the code to accept values from 3 separate moister sensors placed at different areas in a pot and average their values.
 
-### Too Much Water Detection
+### Too Much Water
 It is possible to over water some varieties of plants.  Modify the code to turn the screen red and warn the user when they have added too much water to the pot. (When the sensor reading is over 500.)
 **HINT**: Separate the 'if/else' portion of the code into 3 separate 'if' statements to add a 3rd condition to display.
+if(x >= y){...code...};
+if(x <= y && x >= z){...code...}; //The && operator will evaluate true if both conditions on either side are met.
+if(x <= z){...code...};
