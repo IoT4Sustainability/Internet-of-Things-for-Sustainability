@@ -31,7 +31,8 @@ void loop() {
   // Sets the cursor to the first spot on the second row
   myScreen.setCursor(0,1);
   i++;
-  // Prints the integer value of i to the screen every 1000 ms, or 1 second
+  // Prints the integer value of i to the screen and then wait
+  // 1000 milliseconds or one second, before doing another loop
   myScreen.print(i);
   delay(1000);
 }
