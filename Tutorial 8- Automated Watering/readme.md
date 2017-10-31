@@ -1,6 +1,6 @@
 # Automated Watering
 ### Challenge Level: 1/5
-![working](https://user-images.githubusercontent.com/27307550/30575225-2dccce48-9cb4-11e7-921e-7d7463074c6d.jpg)
+![moisturecomplete](https://user-images.githubusercontent.com/27307550/32209821-86c913c4-bdc7-11e7-89e2-738802b986e4.jpg)
 
 ## Introduction
 
@@ -17,7 +17,6 @@ The Automated Watering device monitors the moister content of the soil it is pla
  3. Grove Soil Moisture Sensor
  4. Grove LCD
  5. 2x Grove Cables
- ![parts](https://user-images.githubusercontent.com/27307550/30575227-2dcdb38a-9cb4-11e7-95b8-bfc429507e36.jpg)
  
  
 ##Core Concepts
@@ -55,7 +54,7 @@ Connect the microcontroller to its power supply and to a computer via the USB ca
 ### Results
 After waiting a few minutes, the board should now be running the Automated Watering program.  Gently plug the two pronged moister sensor into dry soil.  Make sure the metal strips are completely covered by soil, but the small electrical components are not close enough to the dirt to get wet. You should see a message telling you the soil is true dry followed by an analog number from the sensor.  Add water slowly to the far side of the pot away from the sensor, and be careful not to spill any liquid on your board.  The message should now change and the analog value will increase to around 500.
 
-![working](https://user-images.githubusercontent.com/27307550/30575225-2dccce48-9cb4-11e7-921e-7d7463074c6d.jpg)
+![moisturecomplete](https://user-images.githubusercontent.com/27307550/32209821-86c913c4-bdc7-11e7-89e2-738802b986e4.jpg)
 
 ### Exploratory Questions
  1. Lay your finger across the metal prongs on the moister sensor while the program is running.  What do you observe on the screen?  Why are you getting these results?
