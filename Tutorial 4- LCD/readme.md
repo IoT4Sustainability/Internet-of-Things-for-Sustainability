@@ -26,8 +26,11 @@ The information that the LCD screen can convey to us is limited in terms of how 
 The phrase within the quotation marks, Hello World, are the contents of the string. The quotation marks themselves are not a part of it, but are used to identify the string between them. An important thing to note is that for every quotation mark in your code, there MUST be a closing quotation mark somewhere after it. If there is not, then the program will think every single thing after the first quotation mark is part of a string, and it may skip over most of your program. On the other hand, you can't just omit the quotation marks and have myLCDScreen.print(Hello World), or it is going to try and find something called Hello World, which leads to even more errors. So be careful and make sure your quotation marks line up. 
 
 ## LCDScreenBasic
-We can finally get to the interesting part of the tutorial, setting up our board and giving it a program to run. The picture below shows the setup of our board. 
+We can finally get to the interesting part of the tutorial, setting up our board and giving it a program to run. The picture below shows the setup of our board. We need our Intel Galileo board and shield, a single connector, and the LCD screen. The LCD screen needs to be connected to an I2C port, of which there are four on the shield. Any one of them will work for our screen. 
 
 ![lcdscreen](https://user-images.githubusercontent.com/14320086/32156182-0b723404-bcf9-11e7-8688-839ebd2e820e.jpg) <br />
 
-We need our Intel Galileo board and shield, a single connector, and the LCD screen. The LCD screen needs to be connected to an IC2 port, of which there are four on the shield. Any one of them will work for our screen. 
+Then, we need to open up the LCDScreenBasic Arduino file that is included in this folder. This simple program displays the word Timer on the first line of the LCD screen, and then ticks up from zero the amount of seconds that have passed since the board started running the program. Take a few minutes to look through the code and the comments and see if you can figure out what does what.  There are also some areas in the code that you can modify freely, so go ahead and mess with those values. The colors must be a number between 0 and 255, and the print must contain a double quote string between the parenthesis. 
+
+For a fun objective, try to change the color of the LCD screen to any color of your choosing, such as orange or pink. Then, try changing the delay on the timer to five seconds.
+
