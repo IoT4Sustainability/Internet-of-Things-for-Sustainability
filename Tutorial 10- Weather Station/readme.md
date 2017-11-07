@@ -71,8 +71,6 @@ When working it should do ... test by using the webserver to ...
 ### A More Helpful Node
 Modify the code of the server to add the following suggestions based on UV Index and Temperature.
 
-UV Index | Temperaure | Suggestion
---------- | --------- | ------------------------------------
-> 7 | ANY | Woah, it's bright. Wear sunglasses.
-5 - 10 | > 100 | Don't go outside!
-ANY | -20 - 28 | Freezing cold! Wear lots of layers. 
+ 1. If the UV index is greater than 7, print the message: "Woah, it's bright. Wear sunglasses."
+ 2. If the UV index is between 5 and 10 and it is greater than 100 degrees outside, print the message: "Don't go outside!"
+ 3. If the temperature is between -20 and 28 degrees, print the message: "Freezing cold! Wear lots of layers."
