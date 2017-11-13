@@ -80,16 +80,16 @@ To test if the webserver is working, connect a device to the wireless network. T
 ![Connecting-WS](https://user-images.githubusercontent.com/22579849/32729189-cba41690-c837-11e7-9bc4-54398665a13c.JPG) <br />
 
 ### Exploratory Questions
- 1.  How are the server (Intel Galileo) and clients (any connected device that accesses the Intel Galileo webpage)? How can we be sure        that a message made it to to it's intended recipient?
- 2.  If the wanted to 
+ 1.  How are the who are the server and client in this scenario? How can we be sure that a message made it to to it's intended recipient?
+ 2.  Why is it useful to be able to use conditionals (IF statements) in our code?
 
 ### In this tutorial we did the following.
  
- 1. Learned about networking and IP addresses
+ 1. Learned about networking and IP addresses.
  2. Walked through the logic for a WeatherStation.
  3. Installed the physical components.
- 4. Updated code after finding the IP address of the board and network credentials
- 6. Finished and tested the WeatherStation
+ 4. Updated code after finding the IP address of the board and network credentials.
+ 6. Finished and tested the WeatherStation.
   
 ## BONUS CHALLENGE(S)
 
