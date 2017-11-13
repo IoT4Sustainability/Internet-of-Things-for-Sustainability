@@ -74,9 +74,9 @@ Compile and upload the sketch to the Intel Galileo. If working correctly the Ser
 ![getIP2-WS](https://user-images.githubusercontent.com/22579849/32729188-cb8e560c-c837-11e7-9e5a-a0fd2dc080a6.JPG) <br />
 
 ### Results
-After all of our work, the Intel Galileo should be displaying temperature and UVindex correctly on the LCD screen.
+After all of our work, the Intel Galileo should be displaying temperature and UVindex correctly on the LCD screen. <br />
 ![FinalAssembled-WS](https://user-images.githubusercontent.com/22579849/32729554-0d581f54-c839-11e7-999c-7cc947be4bbe.jpg) <br />
-To test if the webserver is working, connect a device to the wireless network. Then open a web browser and enter the Galileo's IP address into the address bar. A website should be displayed, that looks something like this...
+To test if the webserver is working, connect a device to the wireless network. Then open a web browser and enter the Galileo's IP address into the address bar. A website should be displayed, that looks something like this...<br />
 ![Connecting-WS](https://user-images.githubusercontent.com/22579849/32729189-cba41690-c837-11e7-9bc4-54398665a13c.JPG) <br />
 
 ### Exploratory Questions
