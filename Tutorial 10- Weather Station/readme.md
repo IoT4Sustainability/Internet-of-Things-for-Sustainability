@@ -68,9 +68,9 @@ With the UV sensor, temperature sensor, and LCD attached to the Grove shield, it
 ![SensorsAssembled2-WS](https://user-images.githubusercontent.com/22579849/32729552-0d4109fe-c839-11e7-8df7-85552b6d44b8.jpg) <br />
 
 #### Update the IP address
-As per usual, please connect your Grove shield to the Intel Galileo and connect the power supply to power the board on. When the USB light illuminates, connect a usb cable to your computer and Intel Galileo. Open the Arduino IDE and then the WeatherStation code. Once the board is recognized by the Arduino IDE, open a serial connection to your board.
+As per usual, please connect your Grove shield to the Intel Galileo and connect the power supply to power the board on. When the USB light illuminates, connect a usb cable to your computer and Intel Galileo. Open the Arduino IDE and then the WeatherStation code. Once the board is recognized by the Arduino IDE, open a serial connection to your board. <br />
 ![getIP1-WS](https://user-images.githubusercontent.com/22579849/32729187-cb776078-c837-11e7-9592-d4ba1e33d384.JPG) <br />
-Compile and upload the sketch to the Intel Galileo. If working correctly the Serial Connection should state that it connected to the network and provide the IP address of the board. If the connection is not established, ensure that the SSID and password in the code match your network's credentials. Remember the IP address, we will use it to connect to the board later on.
+Compile and upload the sketch to the Intel Galileo. If working correctly the Serial Connection should state that it connected to the network and provide the IP address of the board. If the connection is not established, ensure that the SSID and password in the code match your network's credentials. Remember the IP address, we will use it to connect to the board later on. <br />
 ![getIP2-WS](https://user-images.githubusercontent.com/22579849/32729188-cb8e560c-c837-11e7-9e5a-a0fd2dc080a6.JPG) <br />
 
 ### Results
