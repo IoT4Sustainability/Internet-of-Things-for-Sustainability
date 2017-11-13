@@ -42,16 +42,18 @@ The basic logic involves taking information from the UV sensor and temperature s
  
 ### Assembly
 #### Installing the WifiCard
+To install the wireless card into the Galileo start by turning the Galileo upside down and find it's PCI port.
 ![WifiCard_Insertion1-WS](https://user-images.githubusercontent.com/22579849/32729557-0d9c7f50-c839-11e7-9fa2-3bbaffcdc19a.jpg) <br />
+If the backplate is not already attached to the wireless card, please use a small screwdriver to do so. It is only 2 phillips head screws. Take the card and identify it's pin connectors. There should be a longer group of them and a shorter grouping. Line these up with the Galileo PCI connector. Firmly press the card into the Galileo board. The backplate can then be pressed into the locking plastic stubs located on the bottom of the Galileo board. It should look like the following when done correctly.
 ![WifiCard_Insertion2-WS](https://user-images.githubusercontent.com/22579849/32729551-0d2baff0-c839-11e7-9156-e5f137db6c7a.jpg) <br />
+Take note of the wireless card's attenae. These have gold colored connectors at the non-antenna portions (see below).
 ![WifiCard_Insertion3-WS](https://user-images.githubusercontent.com/22579849/32729556-0d84536c-c839-11e7-84a9-56a9d17f2ed1.jpg) <br />
+There should be 2 similarly shaped female connectors slots on the wireless card. Line up each antenna's connector with the female slot on the wireless card. Press firmly until both antenna are firmly connected.
 ![WifiCard_Insertion4-WS](https://user-images.githubusercontent.com/22579849/32729555-0d6f9c7e-c839-11e7-8e65-47c0a2633853.jpg) <br />
-Please carefully insert the Intel Centrino Advanced N6230 (WifiCard) into the mini PCIe slot of the microcontroller...
 
 
 #### Installing the components
-Install the sensors using the provided quick connect cables. Please install each of the components into the corresponding ports...<br />
-![SensorsAssembled1-WS](https://user-images.githubusercontent.com/22579849/32729560-0dda5410-c839-11e7-810a-ccec19ecb423.jpg) <br />
+Install the UV sensor, temperature sensor, and LCD using the provided quick connect cables. The following table has been provided for your useage.<br />
 
 Port | Component
 --- | ---
@@ -59,17 +61,22 @@ A0  |  UV Sensor
 A1  |  Temperature Sensor
 I2C |  LCD 
 
-It should end up looking something like this...<br />
+The result should look something similar to the following. <br />
+![SensorsAssembled1-WS](https://user-images.githubusercontent.com/22579849/32729560-0dda5410-c839-11e7-810a-ccec19ecb423.jpg) <br />
+
+With the UV sensor, temperature sensor, and LCD attached to the Grove shield, it should look like the following.<br />
 ![SensorsAssembled2-WS](https://user-images.githubusercontent.com/22579849/32729552-0d4109fe-c839-11e7-8df7-85552b6d44b8.jpg) <br />
 
 #### Update the IP address
-Connect to your PC and open this project in the Arduino IDE. Test functionality by ... also take a wireless device and connect to the network and update the IP address and ssid and password...this information is displayed in the ...
+As per usual, please connect your Grove shield to the Intel Galileo and connect the power supply to power the board on. When the USB light illuminates, connect a usb cable to your computer and Intel Galileo. Open the Arduino IDE and then the WeatherStation code. Once the board is recognized by the Arduino IDE, open a serial connection to your board.
 ![getIP1-WS](https://user-images.githubusercontent.com/22579849/32729187-cb776078-c837-11e7-9592-d4ba1e33d384.JPG) <br />
+Compile and upload the sketch to the Intel Galileo. If working correctly the Serial Connection should state that it connected to the network and provide the IP address of the board. If the connection is not established, ensure that the SSID and password in the code match your network's credentials. Remember the IP address, we will use it to connect to the board later on.
 ![getIP2-WS](https://user-images.githubusercontent.com/22579849/32729188-cb8e560c-c837-11e7-9e5a-a0fd2dc080a6.JPG) <br />
 
 ### Results
-When working it should do ... test by using the webserver to ...
+After all of our work, the Intel Galileo should be displaying temperature and UVindex correctly on the LCD screen.
 ![FinalAssembled-WS](https://user-images.githubusercontent.com/22579849/32729554-0d581f54-c839-11e7-999c-7cc947be4bbe.jpg) <br />
+To test if the webserver is working, connect a device to the wireless network. Then open a web browser and enter the Galileo's IP address into the address bar. A website should be displayed, that looks something like this...
 ![Connecting-WS](https://user-images.githubusercontent.com/22579849/32729189-cba41690-c837-11e7-9bc4-54398665a13c.JPG) <br />
 
 ### Exploratory Questions
