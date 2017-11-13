@@ -1,6 +1,7 @@
 
 # Creating a WeatherStation
 ### Challenge Level: 4/5
+![Final-WS](https://user-images.githubusercontent.com/22579849/32729554-0d581f54-c839-11e7-999c-7cc947be4bbe.jpg) <br />
 
 ## Introduction
 ### In this tutorial you will...
@@ -30,6 +31,8 @@ Imagine a crowded room of people and you want to communicate with someone in par
 Speaking of networking, let's talk about what sort of network we will be using for this tutorial (and future tutorials). We will be using a wireless router to create an access point for our Intel Galieo boards and other devices to connect to. This network will also allow a computer or cellphone to connect to the network and communicate with a board by using it's IP address. The wireless router should already be setup by your instructor(s). However, keep in mind that any network could be used in place. We simply wanted a network that was not connected to the internet.
  
 ## Wifi Card (Intel Centrino Advanced N6230)
+![WifiCard-WS](https://user-images.githubusercontent.com/22579849/32729550-0d16439a-c839-11e7-83f1-66a7f27e87be.jpg) <br />
+![WifiCard2-WS](https://user-images.githubusercontent.com/22579849/32729558-0dafd9ce-c839-11e7-904e-6ac32f2c28d9.jpg) <br />
 In order for our Intel Galileo boards to connect to the wireless network, we will need a wireless card to do so. A wireless card is a device that will attach to our boards that will enable them to see and communicate on any wireless network. The Intel Centrino card is compatiable with the Galileo and is capable of communicating on a variety of common wireless protocols; Hence, why we chose to use it.
 
 ## Building a WeatherStation
@@ -39,10 +42,16 @@ The basic logic involves taking information from the UV sensor and temperature s
  
 ### Assembly
 #### Installing the WifiCard
+![WifiCard_Insertion1-WS](https://user-images.githubusercontent.com/22579849/32729557-0d9c7f50-c839-11e7-9fa2-3bbaffcdc19a.jpg) <br />
+![WifiCard_Insertion2-WS](https://user-images.githubusercontent.com/22579849/32729551-0d2baff0-c839-11e7-9156-e5f137db6c7a.jpg) <br />
+![WifiCard_Insertion3-WS](https://user-images.githubusercontent.com/22579849/32729556-0d84536c-c839-11e7-84a9-56a9d17f2ed1.jpg) <br />
+![WifiCard_Insertion4-WS](https://user-images.githubusercontent.com/22579849/32729555-0d6f9c7e-c839-11e7-8e65-47c0a2633853.jpg) <br />
 Please carefully insert the Intel Centrino Advanced N6230 (WifiCard) into the mini PCIe slot of the microcontroller...
+
 
 #### Installing the components
 Install the sensors using the provided quick connect cables. Please install each of the components into the corresponding ports...<br />
+![SensorsAssembled1-WS](https://user-images.githubusercontent.com/22579849/32729560-0dda5410-c839-11e7-810a-ccec19ecb423.jpg) <br />
 
 Port | Component
 --- | ---
@@ -50,11 +59,18 @@ A0  |  UV Sensor
 A1  |  Temperature Sensor
 I2C |  LCD 
 
+It should end up looking something like this...<br />
+![SensorsAssembled2-WS](https://user-images.githubusercontent.com/22579849/32729552-0d4109fe-c839-11e7-8df7-85552b6d44b8.jpg) <br />
+
 #### Update the IP address
 Connect to your PC and open this project in the Arduino IDE. Test functionality by ... also take a wireless device and connect to the network and update the IP address and ssid and password...this information is displayed in the ...
+![getIP1-WS](https://user-images.githubusercontent.com/22579849/32729187-cb776078-c837-11e7-9592-d4ba1e33d384.JPG) <br />
+![getIP2-WS](https://user-images.githubusercontent.com/22579849/32729188-cb8e560c-c837-11e7-9e5a-a0fd2dc080a6.JPG) <br />
 
 ### Results
 When working it should do ... test by using the webserver to ...
+![FinalAssembled-WS](https://user-images.githubusercontent.com/22579849/32729554-0d581f54-c839-11e7-999c-7cc947be4bbe.jpg) <br />
+![Connecting-WS](https://user-images.githubusercontent.com/22579849/32729189-cba41690-c837-11e7-9bc4-54398665a13c.JPG) <br />
 
 ### Exploratory Questions
  1.  How are the server (Intel Galileo) and clients (any connected device that accesses the Intel Galileo webpage)? How can we be sure        that a message made it to to it's intended recipient?
