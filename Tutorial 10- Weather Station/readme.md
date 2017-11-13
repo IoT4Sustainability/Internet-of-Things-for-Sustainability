@@ -22,18 +22,19 @@ In this tutorial, we will be creating a WeatherStation node.
  
 ## Networking
 ### IP Addressing
-A network is defined as ... IP addresses are ... 
+A network is defined as a series of nodes connected together for information sharing or other useful purposes. The internet is a great example of exactly how powerful and useful networks can be in our useful lives. For this reason, Internet of Things devices are almost always connected to a network of some kind (if not internet connected). In this tutorial we will introduce some basic network functionality. However in order to do so, one must understand how nodes communiate on a network.
+Imagine a crowded room of people and you want to communicate with someone in particular. Simply shouting what you want to tell them might be sufficient. But in order for them to understand who you are talking to, you would usually state their name to get their attention. IP addresses are the names given to nodes on a network in order for them to talk to each other. IP addresses can come in a variety of forms. However, the IP addresses that we will be seeing/using come in the form of '192.168.xxx.xxx'. Simply using a machine's IP address will allow one to send data to them.
 
 ### Wireless 
-We will be using a wireless router to network our WeatherStation node with whatever wireless devices we want!
+Speaking of networking, let's talk about what sort of network we will be using for this tutorial (and future tutorials). We will be using a wireless router to create an access point for our Intel Galieo boards and other devices to connect to. This network will also allow a computer or cellphone to connect to the network and communicate with a board by using it's IP address. The wireless router should already be setup by your instructor(s). However, keep in mind that any network could be used in place. We simply wanted a network that was not connected to the internet.
  
 ## Wifi Card (Intel Centrino Advanced N6230)
-A wireless card is...and works by...
+In order for our Intel Galileo boards to connect to the wireless network, we will need a wireless card to do so. A wireless card is a device that will attach to our boards that will enable them to see and communicate on any wireless network. The Intel Centrino card is compatiable with the Galileo and is capable of communicating on a variety of common wireless protocols; Hence, why we chose to use it.
 
 ## Building a WeatherStation
 
 ### How it works
-The logic of how the WeatherStation will work...
+A weatherstation reports the current weather. The WeatherStation will report the current temperature (in Fahrenheit) and UVindex on an LCD screen. In addition our weather station will report these values on a webserver hosted on the weather node. In layman's terms, this wil allow us to connect a computer or cellphone and it will display some information on a website. In addition this website will display clothing suggestions based on the current weather conditions.
  
 ### Assembly
 #### Installing the WifiCard
