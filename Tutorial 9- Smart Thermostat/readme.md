@@ -1,7 +1,7 @@
 
 # Creating a Smart Thermostat
 ### Challenge Level: 5/5
-<FINAL PRODUCT PICTURE> <b />
+<FINAL PRODUCT PICTURE> <br />
 
 ## Introduction
 ### In this tutorial you will...
