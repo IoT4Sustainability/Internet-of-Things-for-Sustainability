@@ -23,6 +23,7 @@ In this tutorial, we will be creating a WeatherStation node.
 ## Networking
 ### IP Addressing
 A network is defined as a series of nodes connected together for information sharing or other useful purposes. The internet is a great example of exactly how powerful and useful networks can be in our useful lives. For this reason, Internet of Things devices are almost always connected to a network of some kind (if not internet connected). In this tutorial we will introduce some basic network functionality. However in order to do so, one must understand how nodes communiate on a network.
+
 Imagine a crowded room of people and you want to communicate with someone in particular. Simply shouting what you want to tell them might be sufficient. But in order for them to understand who you are talking to, you would usually state their name to get their attention. IP addresses are the names given to nodes on a network in order for them to talk to each other. IP addresses can come in a variety of forms. However, the IP addresses that we will be seeing/using come in the form of '192.168.xxx.xxx'. Simply using a machine's IP address will allow one to send data to them.
 
 ### Wireless 
