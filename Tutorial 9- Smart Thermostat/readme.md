@@ -1,7 +1,6 @@
 
 # Creating a Smart Thermostat
 ### Challenge Level: 5/5
-<FINAL PRODUCT PICTURE> <br />
 
 ## Introduction
 ### In this tutorial you will...
@@ -10,7 +9,7 @@
   3. Build a working Smart Thermostat
   
 ## Explanation
-In this tutorial, we will be creating a Smart Thermostat. 
+In this tutorial, we will be creating a Smart Thermostat. This tutorial involves using networking multiple Intel Galileo board together. The purpose is to have an outdoor node that obtains temperature information and sends it to the indoor node that reads it's own temperature. Based on these readings the Smart Thermostat can make 'smart' suggestions for the user based on indoor and outdoor conditions. These suggestions are provided with a webserver as seen in the WeatherStation tutorial.
  
 ## Required Materials
  1. Intel Galileo board kit x 2
