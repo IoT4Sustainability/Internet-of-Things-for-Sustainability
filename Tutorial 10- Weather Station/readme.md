@@ -9,7 +9,7 @@
   3. Build a working WeatherStation
   
 ## Explanation
-In this tutorial, we will be creating a WeatherStation node.
+In this tutorial, we will be creating a WeatherStation node. A weatherstation reports the current weather. The WeatherStation will report the current temperature (in Fahrenheit) and UVindex on an LCD screen. In addition our weather station will report these values on a webserver hosted on the weather node. In layman's terms, this wil allow us to connect a computer or cellphone and it will display some information on a website. In addition this website will display clothing suggestions based on the current weather conditions.
  
 ## Required Materials
  1. Intel Galileo board kit and PC with Arduino IDE installed (see Tutorial 1)
@@ -35,7 +35,7 @@ In order for our Intel Galileo boards to connect to the wireless network, we wil
 ## Building a WeatherStation
 
 ### How it works
-A weatherstation reports the current weather. The WeatherStation will report the current temperature (in Fahrenheit) and UVindex on an LCD screen. In addition our weather station will report these values on a webserver hosted on the weather node. In layman's terms, this wil allow us to connect a computer or cellphone and it will display some information on a website. In addition this website will display clothing suggestions based on the current weather conditions.
+The basic logic involves taking information from the UV sensor and temperature sensor and reporting it to the LCD in a useful way. The real interesesting part of this project is making weather suggestions. Once UV index and temperature have been calculated, these values determine what suggestions are made. These come in the form of IF-STATEMENTS. For example, IF temperature > 80, then suggest the user wears shorts today. Please take this time to look at the WeatherStation and determine what suggestions can be made and what the requirements for each are.
  
 ### Assembly
 #### Installing the WifiCard
