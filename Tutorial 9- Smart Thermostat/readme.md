@@ -4,9 +4,9 @@
 
 ## Introduction
 ### In this tutorial you will...
-  1. Stuff
-  2. Other things
-  3. Build a working Smart Thermostat
+ 1. Discuss the logic of the Smart Thermostat.
+ 2. Build the Smart Thermostat.
+ 3. Test the system to ensure that it is working.
   
 ## Explanation
 In this tutorial, we will be creating a Smart Thermostat. This tutorial involves using networking multiple Intel Galileo board together. The purpose is to have an outdoor node that obtains temperature information and sends it to the indoor node that reads it's own temperature. Based on these readings the Smart Thermostat can make 'smart' suggestions for the user based on indoor and outdoor conditions. These suggestions are provided with a webserver as seen in the WeatherStation tutorial.
@@ -19,40 +19,41 @@ In this tutorial, we will be creating a Smart Thermostat. This tutorial involves
  5. Grove temperature sensor x 2
  6 Mini PCI-e Wireless card (Intel Centrino Advanced N6230) x 2
  7 Working WPA2 wireless network
- 
-## Lesson Topic
-### Lesson Subtopic 1
-Blah blah...
-
-### Lesson Subtopic 2 
-Other things...
 
 ## Building a Smart Thermostat
 
 ### How it works
-The Smart Thermostat works by ...
+The Smart Thermostat works by way of 2 Intel Galileo boards communicating with eath other. The outdoor node gathers and reports it's temperature data to it's LCD. The outdoor continues to then post this information on a webserver. The indoor nodes also gathers temperature data and reports it to it's LCD. In order to fetch the outdoor node's temperature, it connects to the outdoor node webserver and decodes the HTML code in order to fetch the outdoor node's temperature. After this is done, it updates it's LCD with both the indoor and outdoor temperature. It then posts suggestions for heating and cooling on a webserver of it's own.
  
 ### Assembly
 #### Installing the components
-Do these things to build the project...
+This build requires building 2 separate Intel Galileo boards. Install the temperature sensor and LCD in the following format on both of the Grove shields. <br />
+
+Port | Component
+--- | ---
+A1  |  Temperature Sensor
+I2C |  LCD 
+
+<br />After the installation is of the shield components is complete, connect the shields to each Galileo board. Attach the wireless cards to each board if this is not already done (see WeatherStation tutorial for details). Connect one of the Intel Galileo boards to your PC and upload the outdoor node sketch. This wil be the outdoor node.
 
 #### Update the IP address
-Get the IP addresses and update the corresponding code...
+We need to obtain the IP address of the outdoor node. So upon upload of the OutdoorNode sketch, open the serial monitor and obtain the IP address. Disconnect the outdoor node from the PC. It should now be complete and outputting temperature data to the LCD. If not, ensure that the SSID and password match the network that it is connecting to.<br />
+Open the IndoorNode sketch, near the top of the file there is line that determines the IP address of the server. If this IP address does not match the outdoor node's IP address, please update it. Take this time to ensure that the network credentials match the outdoor node's network credentials. Also, the targetted temperature can be changed at this time to whatever the user desires.
 
 ### Results
-Here is the finished product! <br />
-<PICTURE OF FINISHED PRODUCT> <br />
+Upload the IndoorNode sketch to the indoor node. Ensure that you obtain the Indoor node's IP address. It should start displaying an indoor and outdoor temperature on the LCD. Please make sure that the outdoor node is working and is still on at this point. Connect a wireless device to the network and open a browser. Enter the IP address of the indoor node into the search bar. An HTTP website should display with suggestions based on the target, indoor, and outdoor temperature.
 
 ### Exploratory Questions
- 1.  How?
- 2.  Why?
+ 1.  What would happen if the outdoor node changed it's HTTP server to print the temperature in a different location on the page? Would the indoor node still be able to interpret the outdoor temperature?
+ 2.  If the outdoor node is not working, how does the indoor node react? Can you tell why that is the case? (hint: look at the IndoorNode code)
 
 ### In this tutorial we did the following.
  
- 1. This
- 2. That
- 3. Done!
+ 1. Discussed the logic of the Smart Thermostat.
+ 2. Built the Smart Thermostat.
+ 3. Tested the system to ensure that it is working.
   
 ## BONUS CHALLENGE(S)
 
-### Name of Bonus Challenge
+### Three's Company
+Attempt to add a third node to the configuration. The third node will be another outdoor node. The indoor node should recieve both outdoor node's values but will report an average of the 2 outdoor node's temperatures.
