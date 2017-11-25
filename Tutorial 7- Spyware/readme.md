@@ -32,16 +32,16 @@ Now that we have a square wave planned, we need a method of creating it. The pul
 ![pwm](https://user-images.githubusercontent.com/24983989/33233342-ad25236c-d1c9-11e7-9a5e-7e43b5ff10ff.JPG)
 A duty cycle of 50% at a high enough frequency would create an output voltage that is half of the input voltage. By varying the duty cycle over time, a digital (square wave) signal can be used to model an analog (sine wave) one. 
 In our case, we are just taking advantage of the fast switching of the PWM pins to create high frequency pitches. The relations are fairly intuitive, with higher frequencies creating higher pitches. Below is a relation between musical notes and the frequencies available to us. <br />
-Frequency | Musical Note | Time Between Switches
---- | --- | ---
-261 Hz  | c | 1915 microseconds
-294 Hz  |  d | 1700 microseconds
-329 Hz |  e | 1519 microseconds
-349 Hz  | f | 1432 microseconds
-392 Hz  |  g | 1275 microseconds
-440 Hz |  a | 1136 microseconds
-493 Hz  | b | 1014 microseconds
-523 Hz  | C | 956 microseconds
+| Frequency | Musical Note | Time Between Switches |
+| --- | --- | --- |
+| 261 Hz  | c | 1915 microseconds |
+| 294 Hz  |  d | 1700 microseconds |
+| 329 Hz |  e | 1519 microseconds |
+| 349 Hz  | f | 1432 microseconds |
+| 392 Hz  |  g | 1275 microseconds |
+| 440 Hz |  a | 1136 microseconds |
+| 493 Hz  | b | 1014 microseconds |
+| 523 Hz  | C | 956 microseconds |
 
 
  
