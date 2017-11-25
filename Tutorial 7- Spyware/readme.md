@@ -1,6 +1,6 @@
 # Creating a Security Alarm
 ### Challenge Level: 2/5
-![Final-WS](https://user-images.githubusercontent.com/22579849/32729554-0d581f54-c839-11e7-999c-7cc947be4bbe.jpg) <br />
+![assembled_system](https://user-images.githubusercontent.com/24983989/33233337-a480a10a-d1c9-11e7-84cb-06b58bd180b1.jpg)
 
 ## Introduction
 ### In this tutorial you will...
@@ -23,13 +23,13 @@ In this tutorial, we will be creating a security alarm. A motion sensor will det
 ### Sound Waves
 The sound waves we hear are made up of oscillating waves, with different frequencies causing us to hear different pitches. We could theoretically use the analog pins on the arduino to exactly replicate the sine wave of a pure musical note. However, this would take a lot of processing. Instead, we can use the digital pins to create a square wave at the same frequency. 
 
-![WifiCard-WS](https://user-images.githubusercontent.com/22579849/32729550-0d16439a-c839-11e7-83f1-66a7f27e87be.jpg) <br />
+![waves](https://user-images.githubusercontent.com/24983989/33233344-af27eff0-d1c9-11e7-86c8-67f27c0651be.JPG)
 
 A square wave will have the same dominant tone as a sine wave, but the corners will distort the musical note. The additional amplitude will make the sound louder than an equivalent square wave. The harmonics that create the square wave occur at much higher frequencies than the main oscillation, so they will make the sound higher than the main frequency. To learn more about basic sound wave shapes and hear samples of each, visit the following page: https://public.wsu.edu/~jkrug/MUS364/audio/Waveforms.htm.
 
 ### Pulse Width Modulation
 Now that we have a square wave planned, we need a method of creating it. The pulse width modulation pins are intended for use simulating a sine wave by varying the duty cycle.
-![WifiCard-WS](https://user-images.githubusercontent.com/22579849/32729550-0d16439a-c839-11e7-83f1-66a7f27e87be.jpg) <br />
+![pwm](https://user-images.githubusercontent.com/24983989/33233342-ad25236c-d1c9-11e7-9a5e-7e43b5ff10ff.JPG)
 A duty cycle of 50% at a high enough frequency would create an output voltage that is half of the input voltage. By varying the duty cycle over time, a digital (square wave) signal can be used to model an analog (sine wave) one. 
 In our case, we are just taking advantage of the fast switching of the PWM pins to create high frequency pitches. The relations are fairly intuitive, with higher frequencies creating higher pitches. Below is a relation between musical notes and the frequencies available to us. 
 Frequency | Musical Note | Time Between Switches
@@ -46,7 +46,7 @@ Frequency | Musical Note | Time Between Switches
 
  
 ## Motion Detection
-![WifiCard-WS](https://user-images.githubusercontent.com/22579849/32729550-0d16439a-c839-11e7-83f1-66a7f27e87be.jpg) <br />
+![motion_sensor](https://user-images.githubusercontent.com/24983989/33233386-51825fec-d1ca-11e7-8d55-1882a055035d.jpg)
 The motion sensor in our kit is a passive infrared detector. Infrared energy is given off by humans in the form of heat, and a large increase in that heat caused by motion will trip the sensor. The threshold for detection is necessarily set high enough that it will not trip when the sun rises, slightly changing the infrared energy hitting the sensor.  
 
 ## Building a Security Alarm
@@ -67,16 +67,19 @@ D3 | Buzzer
 I2C |  LCD 
 
 The result should look something similar to the following. <br />
-![SensorsAssembled1-WS](https://user-images.githubusercontent.com/22579849/32729560-0dda5410-c839-11e7-810a-ccec19ecb423.jpg) <br />
+![assembled_system](https://user-images.githubusercontent.com/24983989/33233337-a480a10a-d1c9-11e7-84cb-06b58bd180b1.jpg)
 
 #### Upload code
 As per usual, download the Security.ino file and compile it to your board. 
 
 ### Results
 Once the program is running, the LCD should display that it is currently disarmed. <br />
-![FinalAssembled-WS](https://user-images.githubusercontent.com/22579849/32729554-0d581f54-c839-11e7-999c-7cc947be4bbe.jpg) <br />
+![disarmed_state](https://user-images.githubusercontent.com/24983989/33233340-ab256f18-d1c9-11e7-86a2-0ffe67599915.jpg)
 Prepare for obnoxious noises, and press the button. The system should give ten seconds, then all bets are off. <br />
-![Connecting-WS](https://user-images.githubusercontent.com/22579849/32729189-cba41690-c837-11e7-9bc4-54398665a13c.JPG) <br />
+![arming_state](https://user-images.githubusercontent.com/24983989/33233335-9f0347c8-d1c9-11e7-8025-5ad8fbed28e1.jpg)
+![calm_state](https://user-images.githubusercontent.com/24983989/33233338-a8be0e1a-d1c9-11e7-91ed-2a5e07cc74aa.jpg)
+Once it detects motion it will set off an alarm!
+![armed_state](https://user-images.githubusercontent.com/24983989/33233334-9d3b5dea-d1c9-11e7-9a83-575838392692.jpg)
 
 ### Exploratory Questions
  1.  How would the sound change if we used sine waves? Triangle waves? 
