@@ -74,12 +74,12 @@ As per usual, download the Security.ino file and compile it to your board.
 
 ### Results
 Once the program is running, the LCD should display that it is currently disarmed. <br />
-![disarmed_state](https://user-images.githubusercontent.com/24983989/33233340-ab256f18-d1c9-11e7-86a2-0ffe67599915.jpg)
+![disarmed_state](https://user-images.githubusercontent.com/24983989/33233340-ab256f18-d1c9-11e7-86a2-0ffe67599915.jpg) <br />
 Prepare for obnoxious noises, and press the button. The system should give ten seconds, then all bets are off. <br />
-![arming_state](https://user-images.githubusercontent.com/24983989/33233335-9f0347c8-d1c9-11e7-8025-5ad8fbed28e1.jpg)
-![calm_state](https://user-images.githubusercontent.com/24983989/33233338-a8be0e1a-d1c9-11e7-91ed-2a5e07cc74aa.jpg)
-Once it detects motion it will set off an alarm!
-![armed_state](https://user-images.githubusercontent.com/24983989/33233334-9d3b5dea-d1c9-11e7-9a83-575838392692.jpg)
+![arming_state](https://user-images.githubusercontent.com/24983989/33233335-9f0347c8-d1c9-11e7-8025-5ad8fbed28e1.jpg) <br />
+![calm_state](https://user-images.githubusercontent.com/24983989/33233338-a8be0e1a-d1c9-11e7-91ed-2a5e07cc74aa.jpg) <br />
+Once it detects motion it will set off an alarm! <br />
+![armed_state](https://user-images.githubusercontent.com/24983989/33233334-9d3b5dea-d1c9-11e7-9a83-575838392692.jpg) <br />
 
 ### Exploratory Questions
  1.  How would the sound change if we used sine waves? Triangle waves? 
