@@ -31,7 +31,7 @@ A square wave will have the same dominant tone as a sine wave, but the corners w
 Now that we have a square wave planned, we need a method of creating it. The pulse width modulation pins are intended for use simulating a sine wave by varying the duty cycle.
 ![pwm](https://user-images.githubusercontent.com/24983989/33233342-ad25236c-d1c9-11e7-9a5e-7e43b5ff10ff.JPG)
 A duty cycle of 50% at a high enough frequency would create an output voltage that is half of the input voltage. By varying the duty cycle over time, a digital (square wave) signal can be used to model an analog (sine wave) one. 
-In our case, we are just taking advantage of the fast switching of the PWM pins to create high frequency pitches. The relations are fairly intuitive, with higher frequencies creating higher pitches. Below is a relation between musical notes and the frequencies available to us. 
+In our case, we are just taking advantage of the fast switching of the PWM pins to create high frequency pitches. The relations are fairly intuitive, with higher frequencies creating higher pitches. Below is a relation between musical notes and the frequencies available to us. <br />
 Frequency | Musical Note | Time Between Switches
 --- | --- | ---
 261 Hz  | c | 1915 microseconds
