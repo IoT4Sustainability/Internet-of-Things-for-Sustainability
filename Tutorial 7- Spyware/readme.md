@@ -49,7 +49,8 @@ In our case, we are just taking advantage of the fast switching of the PWM pins 
 
  
 ## Motion Detection
-![motion_sensor](https://user-images.githubusercontent.com/24983989/33233386-51825fec-d1ca-11e7-8d55-1882a055035d.jpg)
+![motion_sensor](https://user-images.githubusercontent.com/24983989/33233386-51825fec-d1ca-11e7-8d55-1882a055035d.jpg) <br />
+
 The motion sensor in our kit is a passive infrared detector. Infrared energy is given off by humans in the form of heat, and a large increase in that heat caused by motion will trip the sensor. The threshold for detection is necessarily set high enough that it will not trip when the sun rises, slightly changing the infrared energy hitting the sensor.  
 
 ## Building a Security Alarm
