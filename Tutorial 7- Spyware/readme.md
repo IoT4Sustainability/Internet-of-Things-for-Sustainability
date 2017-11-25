@@ -1,6 +1,7 @@
 # Creating a Security Alarm
 ### Challenge Level: 2/5
-![assembled_system](https://user-images.githubusercontent.com/24983989/33233337-a480a10a-d1c9-11e7-84cb-06b58bd180b1.jpg)
+![assembled_system](https://user-images.githubusercontent.com/24983989/33233337-a480a10a-d1c9-11e7-84cb-06b58bd180b1.jpg) <br />
+
 
 ## Introduction
 ### In this tutorial you will...
@@ -23,13 +24,14 @@ In this tutorial, we will be creating a security alarm. A motion sensor will det
 ### Sound Waves
 The sound waves we hear are made up of oscillating waves, with different frequencies causing us to hear different pitches. We could theoretically use the analog pins on the arduino to exactly replicate the sine wave of a pure musical note. However, this would take a lot of processing. Instead, we can use the digital pins to create a square wave at the same frequency. 
 
-![waves](https://user-images.githubusercontent.com/24983989/33233344-af27eff0-d1c9-11e7-86c8-67f27c0651be.JPG)
+![waves](https://user-images.githubusercontent.com/24983989/33233344-af27eff0-d1c9-11e7-86c8-67f27c0651be.JPG) <br />
+
 
 A square wave will have the same dominant tone as a sine wave, but the corners will distort the musical note. The additional amplitude will make the sound louder than an equivalent square wave. The harmonics that create the square wave occur at much higher frequencies than the main oscillation, so they will make the sound higher than the main frequency. To learn more about basic sound wave shapes and hear samples of each, visit the following page: https://public.wsu.edu/~jkrug/MUS364/audio/Waveforms.htm.
 
 ### Pulse Width Modulation
 Now that we have a square wave planned, we need a method of creating it. The pulse width modulation pins are intended for use simulating a sine wave by varying the duty cycle.
-![pwm](https://user-images.githubusercontent.com/24983989/33233342-ad25236c-d1c9-11e7-9a5e-7e43b5ff10ff.JPG)
+![pwm](https://user-images.githubusercontent.com/24983989/33233342-ad25236c-d1c9-11e7-9a5e-7e43b5ff10ff.JPG) <br />
 A duty cycle of 50% at a high enough frequency would create an output voltage that is half of the input voltage. By varying the duty cycle over time, a digital (square wave) signal can be used to model an analog (sine wave) one. 
 In our case, we are just taking advantage of the fast switching of the PWM pins to create high frequency pitches. The relations are fairly intuitive, with higher frequencies creating higher pitches. Below is a relation between musical notes and the frequencies available to us. <br />
 
@@ -58,7 +60,7 @@ Everything we write in this code is effectively digital, which makes our logic l
 ### Assembly
 
 #### Installing the components
-Install the UV sensor, temperature sensor, and LCD using the provided quick connect cables. The following table has been provided for your useage.<br />
+Install the UV sensor, temperature sensor, and LCD using the provided quick connect cables. The following table has been provided for your useage. <br />
 
 Port | Component
 --- | ---
@@ -68,7 +70,8 @@ D3 | Buzzer
 I2C |  LCD 
 
 The result should look something similar to the following. <br />
-![assembled_system](https://user-images.githubusercontent.com/24983989/33233337-a480a10a-d1c9-11e7-84cb-06b58bd180b1.jpg)
+![assembled_system](https://user-images.githubusercontent.com/24983989/33233337-a480a10a-d1c9-11e7-84cb-06b58bd180b1.jpg) <br />
+
 
 #### Upload code
 As per usual, download the Security.ino file and compile it to your board. 
