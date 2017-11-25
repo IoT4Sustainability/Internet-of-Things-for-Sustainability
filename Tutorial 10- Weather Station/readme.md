@@ -89,7 +89,7 @@ To test if the webserver is working, connect a device to the wireless network. T
  2. Walked through the logic for a WeatherStation.
  3. Installed the physical components.
  4. Updated code after finding the IP address of the board and network credentials.
- 6. Finished and tested the WeatherStation.
+ 5. Finished and tested the WeatherStation.
   
 ## BONUS CHALLENGE(S)
 
