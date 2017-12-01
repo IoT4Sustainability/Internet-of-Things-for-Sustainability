@@ -5,7 +5,7 @@
 ## Introduction
 
 ### In this tutorial you will...
-  1. Be introduced to the concepts of Polling a pin
+  1. Be introduced to the concepts of **Polling** a pin
   2. Using an analog value to control code flow
   
 ## Explanation
@@ -22,10 +22,10 @@ The Automated Watering device monitors the moister content of the soil it is pla
 ## Core Concepts
  
 ### Polling a Pin
-Polling is when a microcontroller periodically checks the value of a sensor.  By default our code polls the sensor every 1 second using a software delay.
+**Polling** is when a microcontroller periodically checks the value of a sensor.  By default our code polls the sensor every 1 second using a **Software Delay**.
 
 ### Software Delay
-A software delay is a line of code that tells the processor to wait for a defined amount of time before continuing program execution.
+A **Software Delay** is a line of code that tells the processor to wait for a defined amount of time before continuing program execution.
 The code:
 delay(1000);
 Will pause the code for 1 second (1000 milliseconds)
@@ -39,7 +39,7 @@ Analog values convey information by encoding it into a number scale.  For exampl
 ### How it works
 The device will poll the moister sensor ever 1 second and store the latest value into the integer variable named "moistureLevel."  If the value is below the low moister threshold then the screen turns red, and it will display a message asking for water. Else, the screen will be green and the message displayed will tell the user that the moister level is OK.
 
-During testing the moister sensor’s analog value was between 0-50 when the soil was dry, and higher after the plant was watered.  This value may need to be adjusted depending on your particular sensor and the type of plant being watered.
+During testing the moister sensor’s analog value was between 0-50 when the soil was dry and higher after the plant was watered.  This value may need to be adjusted depending on your particular sensor and the type of plant being watered.
  
 ### Assembling the Device
 #### Step 1
@@ -60,9 +60,9 @@ After waiting a few minutes, the board should now be running the Automated Water
  1. Lay your finger across the metal prongs on the moister sensor while the program is running.  What do you observe on the screen?  Why are you getting these results?
  2. Currently the board is wasting a lot of power checking the sensor and displaying a new value to the LCD every second.  Since the water could take days or weeks to evaporate or be absorbed by the plant, what could we change in the code to make our device more power friendly?
 
-### In this tutorial we did the following.
+### In this tutorial we used the following.
  
-  1. Polled sensors
+  1. **Polled** sensors
   2. Analog values
   3. Timing delays
   
